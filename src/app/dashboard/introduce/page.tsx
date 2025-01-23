@@ -16,7 +16,7 @@ const jost = Jost({
 
 export default function intruduce() {
     return (
-        <div className="w-full m-auto mt-[250px] flex items-center justify-between">
+        <div className="w-full m-auto flex items-center justify-between">
             <div className="w-[730px]">
                 <h1 className={`text-[52px] text-white ${jost.className}`}>FUEL YOUR DREAMS, LAUNCH</h1>
                 <h1 className={`text-[70px] text-white ${jost.className}`}><b>TO THE MOON!</b></h1>

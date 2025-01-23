@@ -28,7 +28,7 @@ export default function FAQcard({ onToggle, isOpen, faqtitle, description }: { o
                     />
                 </div>
 
-                <p className={`text-[18px] font-light text-white overflow-hidden transition-max-height duration-500 ease-in-out ${isOpen ? 'max-h-40  mt-[30px] mb-[20px]' : 'max-h-0'}`}>
+                <p className={`text-[18px] font-light text-white overflow-hidden transition-max-height duration-500 ease-out ${isOpen ? 'max-h-40  mt-[30px] mb-[20px]' : 'max-h-0'}`}>
                     {description}
                 </p>
 

@@ -49,8 +49,8 @@ export default function featured() {
                 <div className="w-full mt-[50px] flex items-center justify-center">
                     <Button1
                         name="View More"
-                        width="120px"
-                        height="30px"
+                        width="140px"
+                        height="40px"
                     />
                 </div>
             </div>
