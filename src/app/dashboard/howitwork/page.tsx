@@ -12,7 +12,7 @@ const jost = Jost({
 export default function Howitworks() {
     return (
         <div className={`w-full mt-[180px] ${jost.className}`}>
-            <h1 className='text-[40px] font-bold text-white'>HOW TO PARTICIPATE IN IDOS?</h1>
+            <h1 className='text-[50px] font-bold text-white mb-[-50px]'>HOW TO PARTICIPATE IN IDOS?</h1>
             <Image
                 alt='howitworks'
                 src={IDOS}

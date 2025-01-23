@@ -25,34 +25,34 @@ export default function LiveCard(
             livestate: string,
         }) {
     return (
-        <div className="w-[395px] h-[605px] border-[1px] border-[#27B17D] rounded-[10px] relative">
-            <div className="w-full h-[145px] bg-cover rounded-t-[10px]" style={{ backgroundImage: "url(assets/back/card.png)" }}></div>
-            <div className="w-full h-[455px] bg-[#030409] rounded-b-[10px] bg-no-repeat bg-bottom backdrop-blur-md" style={{ backgroundImage: "url(assets/category/white_astromove.png)" }}></div>
+        <div className="w-[450px] h-[700px] border-[1px] border-[#27B17D] rounded-[10px] relative">
+            <div className="w-full h-[170px] bg-cover rounded-t-[10px]" style={{ backgroundImage: "url(assets/back/card.png)" }}></div>
+            <div className="w-full h-[528px] bg-[#030409] rounded-b-[10px] bg-no-repeat bg-bottom backdrop-blur-md" style={{ backgroundImage: "url(assets/category/white_astromove.png)" }}></div>
             <div className="w-full h-full absolute top-0 left-0 rounded-[10px]">
                 <div className="w-[62px] h-[24px] border-[1px] border-[#27B17D] rounded-[5px] flex items-center justify-center top-[15px] left-[15px] absolute" style={{ display: livestate }}>
                     <p className="text-[#27B17D] text-[14px]">LIVE</p>
                 </div>
-                <div className="w-[350px] m-auto mt-[115px] flex flex-col items-center">
+                <div className="w-[400px] m-auto mt-[140px] flex flex-col items-center">
                     <div className="w-[60px] h-[60px] bg-[#27B17D] rounded-[5px]">
                         <Image
                             alt="live"
                             src={CardIcon}
                         />
                     </div>
-                    <h1 className="text-[20] text-white text-center my-[15px] font-medium">{projectname}</h1>
-                    <p className="w-full text-[16px] font-light text-white text-center block">{description}</p>
-                    <div className="w-full flex justify-between my-[30px]">
-                        <div className="h-[120px] flex flex-col justify-between">
-                            <h1 className="text-[16px] font-semibold text-[#868688]">TARGETED RAISE</h1>
-                            <h1 className="text-[16px] font-semibold text-white">{target}</h1>
-                            <h1 className="text-[16px] font-semibold text-[#868688]">TOKEN PRICE</h1>
-                            <h1 className="text-[16px] font-semibold text-white">{token}</h1>
+                    <h1 className="text-[30px] text-white text-center my-[20px] font-medium">{projectname}</h1>
+                    <p className="w-full text-[18px] font-light text-white text-center block">{description}</p>
+                    <div className="w-full flex justify-between my-[35px]">
+                        <div className="h-[130px] flex flex-col justify-between">
+                            <h1 className="text-[20px] font-semibold text-[#868688]">TARGETED RAISE</h1>
+                            <h1 className="text-[20px] font-semibold text-white">{target}</h1>
+                            <h1 className="text-[20px] font-semibold text-[#868688]">TOKEN PRICE</h1>
+                            <h1 className="text-[20px] font-semibold text-white">{token}</h1>
                         </div>
-                        <div className="h-[120px] flex flex-col justify-between items-end">
-                            <h1 className="text-[16px] font-semibold text-[#868688]">STARTS</h1>
-                            <h1 className="text-[16px] font-semibold text-white">{startday}</h1>
-                            <h1 className="text-[16px] font-semibold text-[#868688]">ENDS</h1>
-                            <h1 className="text-[16px] font-semibold text-white">{endday}</h1>
+                        <div className="h-[130px] flex flex-col justify-between items-end">
+                            <h1 className="text-[20px] font-semibold text-[#868688]">STARTS</h1>
+                            <h1 className="text-[20px] font-semibold text-white">{startday}</h1>
+                            <h1 className="text-[20px] font-semibold text-[#868688]">ENDS</h1>
+                            <h1 className="text-[20px] font-semibold text-white">{endday}</h1>
                         </div>
                     </div>
                     <Button1
@@ -75,10 +75,10 @@ export default function LiveCard(
                     className="w-full h-[50px] bg-[#090A17] rounded-b-[10px] flex items-center justify-between box-border px-[22px] mt-auto absolute bottom-0"
                     style={{ display: timeview }}
                 >
-                    <h1 className="text-[14px] text-[#27B17D] font-bold">REGISTRATION ENDS IN</h1>
+                    <h1 className="text-[16px] text-[#27B17D] font-bold">REGISTRATION ENDS IN</h1>
                     <div className="flex justify-center items-center">
                         <Image alt="watch" src={Watch} />
-                        <h1 className="text-[14px] text-[#27B17D] ml-[10px] font-bold ">7D 14H 46M 18S</h1>
+                        <h1 className="text-[16px] text-[#27B17D] ml-[10px] font-bold ">7D 14H 46M 18S</h1>
                     </div>
                 </div>
             </div>
