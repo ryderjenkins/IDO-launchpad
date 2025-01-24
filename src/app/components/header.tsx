@@ -6,8 +6,18 @@ import Wallet from "../../../public/assets/icon/wallet.png";
 import React, { useEffect, useState } from 'react';
 import WalletModal from "./WalletModal";
 
+import { Jost } from 'next/font/google';
+const jost = Jost({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-jost',
+
+});
+
+
 export default function Header() {
 
+    //Navbar bg control when scroll down or scroll up
     const [isSticky, setIsSticky] = useState(false);
 
     const handleScroll = () => {
@@ -18,12 +28,22 @@ export default function Header() {
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
 
+        // window.scrollTo({
+        //     top: 0,
+        //     behavior: 'smooth'
+        // });
+
+        if (window.scrollY > 0) {
+            setIsSticky(true);
+        }
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
+
     }, []);
 
-
+    //Modal view when click on wallet icon
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => {
@@ -31,8 +51,7 @@ export default function Header() {
     };
 
     return (
-
-        <div className={`w-full h-[90px] flex sticky top-0 z-50 ${isModalOpen === false && isSticky ? 'backdrop-blur-2xl bg-[#27b17c11]' : ''}`}>
+        <div className={`${jost.className} w-full h-[90px] flex sticky top-0 z-10 backdrop-filter ${isSticky ? 'backdrop-blur-2xl bg-[#27b17c11]' : ''}`}>
             <div className="w-[1440px] h-full m-auto flex justify-between items-center ">
                 <Link href={"/"}>
                     <Image src={HeaderLogo} alt="logo" />

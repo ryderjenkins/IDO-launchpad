@@ -5,10 +5,17 @@ import FooterDiscord from '../../../public/assets/icon/Fdiscord.png';
 import FooterTwitter from '../../../public/assets/icon/Fx.png';
 import FooterTelegram from '../../../public/assets/icon/Ftelegram.png';
 import FooterMedium from '../../../public/assets/icon/Fmedia.png';
+import { Jost } from 'next/font/google';
+const jost = Jost({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-jost',
+
+});
 
 export default function Footer() {
     return (
-        <footer className="flex">
+        <footer className={`flex ${jost.className}`}>
             <div className="w-[1440px] m-auto">
                 <div className="w-full h-[1px] bg-[#27B17D]"></div>
                 <div className="w-full flex items-end justify-between my-[60px]">

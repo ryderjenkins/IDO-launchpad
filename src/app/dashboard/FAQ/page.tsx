@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Jost } from 'next/font/google';
 import FAQcard from '@/app/components/FAQcard';
+import { Jost } from 'next/font/google';
 const jost = Jost({
     subsets: ['latin'],
     display: 'swap',
     variable: '--font-jost',
 
-})
+});
 
 interface DataItem {
     title: string;

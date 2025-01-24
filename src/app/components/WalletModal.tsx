@@ -1,48 +1,61 @@
+'use client'
+import Image from 'next/image';
+import Help from '../../../public/assets/icon/Wallet/help.png';
+import Close from '../../../public/assets/icon/Close.png';
 
-import React from 'react';
-import { useEffect } from 'react';
-interface ModalProps {
-    isOpen: boolean;
-    onClose: () => void;
-}
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    bgcolor: '#030409',
+    border: '1px solid #E3E3E3',
+    boxShadow: 24,
+    borderRadius: '10px',
+    py: '20px',
+    px: '23px',
+};
 
-    useEffect(() => {
-        if (isOpen) {
-            // Prevent body from scrolling while keeping scrollbar visible
-            const scrollY = window.scrollY;
-            document.body.style.position = 'fixed';
-            document.body.style.top = `-${scrollY}px`;
-            document.body.style.width = '100%'; // Prevent layout shift
+import { Jost } from 'next/font/google';
+const jost = Jost({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-jost',
 
-            return () => {
-                document.body.style.position = '';
-                document.body.style.top = '';
-                window.scrollTo(0, scrollY); // Restore scroll position
-            };
-        }
-    }, [isOpen]);
+});
 
-    if (!isOpen) return null;
+export default function NestedModal({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) {
 
     return (
-        <div
-            className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-100 overflow-hidden"
-            onClick={onClose}
-        >
-            <div className="bg-white rounded-lg p-6 w-80">
-                <h2 className="text-lg font-semibold mb-4">Connect Your Wallet</h2>
-                <p>Please select your wallet provider.</p>
-                {/* Add wallet connection options here */}
-                <button
-                    onClick={onClose}
-                    className="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-                >
-                    Close
-                </button>
-            </div>
+        <div className={`${jost.className}`}>
+            <Modal
+                open={isOpen}
+                onClose={onClose}
+                aria-labelledby="parent-modal-title"
+                aria-describedby="parent-modal-description"
+                className='backdrop-blur-sm'
+            >
+                <Box sx={{ ...style, width: 360, height: 420 }}>
+                    <div className='flex justify-between items-center'>
+                        <a href="">
+                            <Image
+                                alt='help'
+                                src={Help}
+                            />
+                        </a>
+                        <h1 className={`text-[20px] font-medium ${jost.className}`}>Connect Wallet</h1>
+                        <a href="">
+                            <Image
+                                alt='close'
+                                src={Close}
+                            />
+                        </a>
+                    </div>
+                </Box>
+            </Modal>
         </div>
     );
-};
-export default Modal;
+}
