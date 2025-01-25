@@ -2,7 +2,7 @@ import Button2 from "@/app/components/button2";
 
 export default function LaunchpadIntro() {
     return (
-        <div className="flex items-center px-[40px] w-full h-[450px] border-[1px] border-[#646464] rounded-[10px] mt-[100px] backdrop-blur-lg bg-gradient-to-r bg-opacity-10 from-[#e3e3e309] to-[#e3e3e333]">
+        <div className="flex items-center px-[40px] w-full h-[450px] border-[1px] border-[#646464] rounded-[10px] mt-[100px] backdrop-blur-lg bg-gradient-to-r bg-opacity-10 from-[#e3e3e309] to-[#e3e3e307]">
             <div>
                 <h1 className="text-[48px]">
                     FUEL YOUR DREAMS, LAUNCH

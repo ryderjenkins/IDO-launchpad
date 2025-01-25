@@ -3,7 +3,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import "./globals.css";
 import { usePathname } from 'next/navigation';
-
+// import CustomCursor from "./components/CustomCursor";
 
 export default function RootLayout({
   children,
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${getBackgroundImage()}`}>
-
+        {/* <CustomCursor /> */}
         <Header />
         <main>
           {children}

@@ -36,7 +36,7 @@ export default {
       },
       backgroundImage: {
         'home': "url('/assets/back/universe.png')",
-        'launchpad': "url('/assets/back/card.png')",
+        'launchpad': "url('/assets/back/LaunchBack.png')",
         'default': "url('/assets/back/universe.png')",
       },
     },
