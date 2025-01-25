@@ -44,7 +44,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
-  background-image: url("../../public/assets/back/universe.png");
+  /* background-image: url("../../public/assets/back/universe.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

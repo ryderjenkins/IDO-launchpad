@@ -22,7 +22,7 @@ export default function WalletItemSquare({ walletitems, walletname, ConnectWalle
                 alt='wallet icon'
                 src={walletitems}
             />
-            <h1 className='text-[8px] font-medium text-white'>{walletname}</h1>
+            <h1 className='text-[10px] font-medium text-white'>{walletname}</h1>
         </button>
     )
 }

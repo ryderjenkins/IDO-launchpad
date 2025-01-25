@@ -1,4 +1,4 @@
-import {heroui} from '@heroui/theme';
+import { heroui } from '@heroui/theme';
 import type { Config } from "tailwindcss";
 
 export default {
@@ -33,6 +33,11 @@ export default {
       fontFamily: {
         sans: ['var(--font-inter)'],
         jost: ['var(--font-jost)'],
+      },
+      backgroundImage: {
+        'home': "url('/assets/back/universe.png')",
+        'launchpad': "url('/assets/back/card.png')",
+        'default': "url('/assets/back/universe.png')",
       },
     },
   },

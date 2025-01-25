@@ -50,6 +50,7 @@ export default function Header() {
         setIsModalOpen(!isModalOpen);
     };
 
+
     return (
         <div className={`${jost.className} w-full h-[90px] flex sticky top-0 z-10 backdrop-filter ${isSticky ? 'backdrop-blur-2xl bg-[#27b17c11]' : ''}`}>
             <div className="w-[1440px] h-full m-auto flex justify-between items-center ">
