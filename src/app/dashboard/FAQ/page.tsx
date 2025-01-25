@@ -60,7 +60,7 @@ export default function FAQ() {
     };
 
     return (
-        <div className={`w-full mt-[240px] mb-[150px] ${jost.className}`}>
+        <div className={`w-full mt-[240px] ${jost.className}`}>
             <h1 className='font-bold mb-[60px] text-[50px]'>Frequently Asked Questions</h1>
 
             {data.map((item, index) => (

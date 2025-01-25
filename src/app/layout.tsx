@@ -28,7 +28,6 @@ export default function RootLayout({
       <body className={`${getBackgroundImage()}`}>
 
         <Header />
-        <h1>{current}</h1>
         <main>
           {children}
         </main>

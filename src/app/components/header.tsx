@@ -5,6 +5,7 @@ import HeaderLogo from "../../../public/assets/icon/headerlogo.png";
 import Wallet from "../../../public/assets/icon/wallet.png";
 import React, { useEffect, useState } from 'react';
 import WalletModal from "./WalletModal";
+import { usePathname } from "next/navigation";
 
 import { Jost } from 'next/font/google';
 const jost = Jost({
@@ -28,11 +29,6 @@ export default function Header() {
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
 
-        // window.scrollTo({
-        //     top: 0,
-        //     behavior: 'smooth'
-        // });
-
         if (window.scrollY > 0) {
             setIsSticky(true);
         }
@@ -51,6 +47,21 @@ export default function Header() {
     };
 
 
+    const LaunchedPageColor = () => {
+        if (usePathname() === '/launchpad') {
+            return 'text-[#27B17D]';
+        } else {
+            return 'text-white';
+        }
+    }
+    const ClaimsPageColor = () => {
+        if (usePathname() === '/claims') {
+            return 'text-[#27B17D]';
+        } else {
+            return 'text-white';
+        }
+    }
+
     return (
         <div className={`${jost.className} w-full h-[90px] flex sticky top-0 z-10 backdrop-filter ${isSticky ? 'backdrop-blur-2xl bg-[#27b17c11]' : ''}`}>
             <div className="w-[1440px] h-full m-auto flex justify-between items-center ">
@@ -58,8 +69,16 @@ export default function Header() {
                     <Image src={HeaderLogo} alt="logo" />
                 </Link>
                 <div className="w-[400px] h-[40px] border-[#646a6b71] border-[1px] flex items-center justify-center gap-16 rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c]">
-                    <Link href={"/launchpad"} className="text-[20px]">IDO Launchpad</Link>
-                    <Link href={"/claims"} className="text-[20px]">Claims</Link>
+                    <Link
+                        href={"/launchpad"}
+                        className={`text-[20px] ${LaunchedPageColor()}`}>
+                        IDO Launchpad
+                    </Link>
+                    <Link
+                        href={"/claims"}
+                        className={`text-[20px] ${ClaimsPageColor()}`}>
+                        Claims
+                    </Link>
                 </div>
                 <button
                     className="w-[250px] h-[40px] rounded-[10px] bg-[#27B17D] flex items-center justify-center gap-3"

@@ -16,7 +16,7 @@ const jost = Jost({
 export default function Footer() {
     return (
         <footer className={`flex ${jost.className}`}>
-            <div className="w-[1440px] m-auto">
+            <div className="w-[1440px] m-auto  mt-[150px]">
                 <div className="w-full h-[1px] bg-[#27B17D]"></div>
                 <div className="w-full flex items-end justify-between my-[60px]">
                     <div>
