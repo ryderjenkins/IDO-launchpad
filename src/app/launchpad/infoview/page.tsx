@@ -1,3 +1,4 @@
+'use client'
 import CompletedCard from "@/app/components/completedcard";
 import LiveCard from "@/app/components/livecard";
 import { useState } from "react";
@@ -46,11 +47,11 @@ export default function InfoView() {
             <div className="w-full flex justify-between">
                 <div className="flex w-[400px] justify-between mb-[50px]">
                     <button
-                        className={`w-[180px] h-[40px] bg-[#090A17] rounded-[10px] text-white flex items-center justify-center 
+                        className={`w-[180px] h-[40px] bg-[#090A17] rounded-[10px] flex items-center justify-center 
                             ${select ? 'border-[1px] border-[#27B17D]' : ''}`}
                         onClick={LiveUpcomingView}
                     >
-                        <p className="text-[#93949A]">Live & Upcoming</p>
+                        <p className={`text-[#93949A] ${select ? 'text-white' : ''}`}>Live & Upcoming</p>
                     </button>
 
                     <button
@@ -58,7 +59,7 @@ export default function InfoView() {
                             ${!select ? 'border-[1px] border-[#27B17D]' : ''}`}
                         onClick={CompletedView}
                     >
-                        <p className="text-[#93949A]">Completed</p>
+                        <p className={`text-[#93949A] ${!select ? 'text-white' : ''}`}>Completed</p>
                     </button>
                 </div>
                 <input type="text" placeholder="Search Project" className="w-[400px] h-[40px] bg-[#090A17] font-normal rounded-[10px] text-white px-[20px] text-[16px] outline-none focus:ring-1 ring-[#27B17D]" />

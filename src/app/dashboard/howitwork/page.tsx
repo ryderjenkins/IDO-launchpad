@@ -11,7 +11,7 @@ const jost = Jost({
 
 export default function Howitworks() {
     return (
-        <div className={`w-full mt-[180px] ${jost.className}`}>
+        <section className={`w-full pt-[180px] ${jost.className}`} id='howitworks'>
             <h1 className='text-[50px] font-bold text-white mb-[-50px]'>HOW TO PARTICIPATE IN IDOS?</h1>
             <Image
                 alt='howitworks'
@@ -36,6 +36,6 @@ export default function Howitworks() {
                     <p className='text-[18px] font-light mt-[15px]'>Approve the wallet transactions to participate in the IDO.</p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };

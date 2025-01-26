@@ -1,4 +1,4 @@
-
+'use client'
 import Button1 from '../../components/button1';
 import Image from 'next/image';
 import aptos from "../../../../public/assets/category/aptos.png";
@@ -13,19 +13,35 @@ const jost = Jost({
 
 })
 
-
 export default function intruduce() {
+
+    const scrollToSection = (event: React.MouseEvent) => {
+        event.preventDefault();
+        const section = document.getElementById('howitworks');
+        if (section) {
+            const topPosition = section.getBoundingClientRect().top + window.scrollY + 20;
+
+            window.scrollTo({
+                top: topPosition,
+                behavior: 'smooth', // Smooth scrolling
+            });
+        }
+    };
+
     return (
         <div className="w-full m-auto flex items-center justify-between">
             <div className="w-[730px]">
                 <h1 className={`text-[52px] text-white ${jost.className}`}>FUEL YOUR DREAMS, LAUNCH</h1>
                 <h1 className={`text-[70px] text-white ${jost.className}`}><b>TO THE MOON!</b></h1>
                 <p className={`text-[24px] text-white block mt-[20px] font-light mb-[50px] ${jost.className}`}>Astromove identifies the best new tokens on the Aptos and Sui networks and launches them with a refund guarantee before they are listed on exchanges. Together, let’s redefine success in the Aptos and Sui ecosystems.</p>
-                <Button1
-                    name={"How it works"}
-                    width='182px'
-                    height='50px'
-                />
+
+                <a onClick={scrollToSection}>
+                    <Button1
+                        name={"How it works"}
+                        width='182px'
+                        height='50px'
+                    />
+                </a>
                 <p className={`block my-[30px] text-white text-[24px] font-light ${jost.className}`}>
                     Supported Blockchains:
                 </p>

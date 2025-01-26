@@ -14,7 +14,7 @@ export default function Button1({ name, width, height }: { name: string, width?:
             className="text-white border-[1px] border-[#646769] rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c] "
             style={{ width, height }}
         >
-            <p className={`text-white text-[20px] font-medium ${jost.className}`}>{name}</p>
+            <span className={`text-white text-[20px] font-medium ${jost.className}`}>{name}</span>
         </button>
     );
 };

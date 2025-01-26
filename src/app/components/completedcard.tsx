@@ -35,7 +35,7 @@ export default function CompletedCard(
             <button
                 className="text-white border-[1px] border-[#646769] w-[120px] h-[30px] rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c] "
             >
-                <p className={`text-white text-[16px] font-medium`}>Project View</p>
+                <span className={`text-white text-[16px] font-medium`}>Project View</span>
             </button>
         </div>
     );

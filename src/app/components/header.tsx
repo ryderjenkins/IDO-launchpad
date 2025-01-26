@@ -88,7 +88,7 @@ export default function Header() {
                         alt="wallet"
                         src={Wallet}
                     />
-                    <h1 className="text-[20px] font-medium">Connect Wallet</h1>
+                    <span className="text-[20px] font-medium">Connect Wallet</span>
                 </button>
             </div>
             <WalletModal
