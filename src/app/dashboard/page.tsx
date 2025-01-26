@@ -1,3 +1,4 @@
+'use client'
 import Featured from "./featured/page";
 import Introduce from "./introduce/page";
 import Howitworks from "./howitwork/page";

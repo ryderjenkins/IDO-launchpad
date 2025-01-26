@@ -1,3 +1,4 @@
+'use client'
 import Button2 from "@/app/components/button2";
 
 export default function LaunchpadIntro() {

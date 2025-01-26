@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react';
 import FAQcard from '@/app/components/FAQcard';
 import { Jost } from 'next/font/google';

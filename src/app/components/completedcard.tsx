@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import CompleteCardLogo from '../../../public/assets/icon/livecard.png';
 

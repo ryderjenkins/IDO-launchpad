@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import IDOS from '../../../../public/assets/category/IDOS.png';
 import { Jost } from 'next/font/google';

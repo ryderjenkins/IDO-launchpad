@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { Jost } from 'next/font/google'
 

@@ -1,3 +1,4 @@
+'use client'
 import Image, { StaticImageData } from 'next/image'
 import Add from '../../../public/assets/icon/Wallet/add.png';
 import { Jost } from 'next/font/google';

@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import ClaimLogo from '../../../public/assets/icon/claimproject.png';
 export default function ClaimCard({ projectName, investment, vesting, startday, stateview }:

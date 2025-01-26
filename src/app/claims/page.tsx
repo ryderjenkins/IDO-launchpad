@@ -1,3 +1,4 @@
+'use client'
 import { Jost } from 'next/font/google';
 import ClaimCard from '../components/ClaimCard';
 

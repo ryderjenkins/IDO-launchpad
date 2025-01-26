@@ -1,4 +1,4 @@
-
+'use client'
 import LiveCard from "../../components/livecard";
 import Button1 from "../../components/button1";
 import { Jost } from 'next/font/google';

@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Button2 from "./button2";
 import FooterLogo from '../../../public/assets/category/footer.png';

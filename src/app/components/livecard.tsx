@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Button1 from "./button1";
 import CardIcon from "../../../public/assets/category/icon.png";

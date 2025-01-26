@@ -1,3 +1,4 @@
+'use client'
 import Drop from "../../../public/assets/icon/dropdown.png";
 import Image from "next/image";
 

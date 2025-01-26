@@ -49,7 +49,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${getBackgroundImage()}`}>
-        {/* <CustomCursor /> */}
         <Header />
         <main>
           {children}
