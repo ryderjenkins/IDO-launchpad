@@ -44,6 +44,8 @@ export default {
         'fluid2': 'clamp(32px, calc(32px + (70 - 32) * ((100vw - 360px) / (1250 - 360))), 70px)',
         'fluid3': 'clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / (720 - 360))), 24px)',
         'buttonfluid': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (720 - 360))), 20px)',
+        'livecardcontent': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (480 - 360))), 20px)',
+        'live16font': 'clamp(12px, calc(12px + (16 - 12) * ((100vw - 360px) / (480 - 360))), 16px)',
       },
       screens: {
         'xs': '480px',
@@ -54,6 +56,20 @@ export default {
         '2xl': '1250px',
         '3xl': '1415px',
       },
+      width: {
+        'livecardWidth': 'calc(350px + (450 - 350) * ((100vw - 360px) / (480 - 360)))',
+      },
+      height: {
+        'livecardHeight': 'clamp(600px, calc(600px + (700 - 600) * ((100vw - 360px) / (480 - 360))), 700px)',
+        'livecardHeaderHeight': 'clamp(120px, calc(120px + (170 - 120) * ((100vw - 360px) / (480 - 360))), 170px)',
+        'livecardcontent': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (480 - 360))), 20px)',
+
+      },
+      margin: {
+        'livecardLogo': 'clamp(90px, calc(90px + (140 - 90) * ((100vw - 360px) / (480 - 360))), 140px)',
+        'live20margin': 'clamp(10px, calc(10px + (20 - 10) * ((100vw - 360px) / (480 - 360))), 20px)',
+
+      }
     },
   },
   plugins: [heroui()],
