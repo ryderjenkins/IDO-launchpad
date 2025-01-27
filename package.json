@@ -18,7 +18,6 @@
     "@heroui/system": "^2.4.7",
     "@heroui/theme": "^2.4.6",
     "@mui/material": "^6.4.1",
-    "@next/font": "^14.2.15",
     "framer-motion": "^12.0.1",
     "headlessui": "^0.0.0",
     "mui": "^0.0.1",
