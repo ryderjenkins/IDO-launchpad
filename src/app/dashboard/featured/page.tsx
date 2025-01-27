@@ -15,15 +15,16 @@ const CardInfo = [
     { timeview: " ", livestate: " ", projectname: "PROJECT NAME", description: "Lorem ipsum dolor sit amet consectetur. Etiam scelerisque lacus mi id.", target: "900.000 USD", token: "0.00099 USD", startday: "JAN 14, 14:00 UTC", endday: "JAN 21, 14:00 UTC" },
     { timeview: "none", livestate: "none", projectname: "PROJECT NAME", description: "Lorem ipsum dolor sit amet consectetur. Etiam scelerisque lacus mi id.", target: "900.000 USD", token: "0.00099 USD", startday: "JAN 14, 14:00 UTC", endday: "JAN 21, 14:00 UTC" },
     { timeview: "none", livestate: "none", projectname: "PROJECT NAME", description: "Lorem ipsum dolor sit amet consectetur. Etiam scelerisque lacus mi id.", target: "900.000 USD", token: "0.00099 USD", startday: "JAN 14, 14:00 UTC", endday: "JAN 21, 14:00 UTC" },
+    { timeview: "none", livestate: "none", projectname: "PROJECT NAME", description: "Lorem ipsum dolor sit amet consectetur. Etiam scelerisque lacus mi id.", target: "900.000 USD", token: "0.00099 USD", startday: "JAN 14, 14:00 UTC", endday: "JAN 21, 14:00 UTC" },
 ];
 
 export default function featured() {
     return (
-        <div className={`w-full m-auto mt-[215px] ${jost.className}`}>
+        <div className={`w-full m-auto mt-[215px] ${jost.className} `}>
             <h1 className='text-white text-[50px] font-bold mb-[35px]'>FEATURED PROJECTS</h1>
             <div className="w-full mt-[80px]">
 
-                <div className="w-full flex justify-between">
+                <div className="w-full flex flex-wrap gap-y-8 justify-around 3xl:h-[700px] overflow-hidden">
                     {CardInfo.map((item, index) => (
                         <div key={index}>
                             <LiveCard
