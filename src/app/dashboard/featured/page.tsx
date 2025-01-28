@@ -20,11 +20,11 @@ const CardInfo = [
 
 export default function featured() {
     return (
-        <div className={`w-full m-auto 2xl:mt-[215px] mt-mainmargin ${jost.className} `}>
-            <h1 className='text-white 2xl:text-[50px] text-maintitle text-center lg2:text-left font-bold mb-[35px]'>FEATURED PROJECTS</h1>
+        <div className={`w-full m-auto xl:mt-[200px] mt-mainmargin ${jost.className} `}>
+            <h1 className='text-white 2xl:text-[40px] text-maintitle text-center lg2:text-left font-bold mb-[35px]'>FEATURED PROJECTS</h1>
             <div className="w-full mt-[80px]">
 
-                <div className="w-full flex flex-wrap gap-y-8 justify-around 3xl:h-[700px] overflow-hidden">
+                <div className="xl:w-full lg2:w-[900px] m-auto flex flex-wrap gap-y-[22px] justify-around xl:h-[610px] overflow-hidden">
                     {CardInfo.map((item, index) => (
                         <div key={index}>
                             <LiveCard

@@ -61,8 +61,8 @@ export default function FAQ() {
     };
 
     return (
-        <div className={`w-full 2xl:mt-[215px] mt-mainmargin p-2 ${jost.className}`}>
-            <h1 className='font-bold mb-[60px] 2xl:text-[50px] text-center lg2:text-left text-maintitle'>Frequently Asked Questions</h1>
+        <div className={`w-full 2xl:mt-[200px] mt-mainmargin p-2 ${jost.className}`}>
+            <h1 className='font-bold mb-[60px] 2xl:text-[40px] text-center lg2:text-left text-maintitle'>Frequently Asked Questions</h1>
 
             {data.map((item, index) => (
                 <FAQcard

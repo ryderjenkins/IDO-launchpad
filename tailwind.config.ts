@@ -40,15 +40,17 @@ export default {
         'default': "url('/assets/back/universe.png')",
       },
       fontSize: {
-        'fluid': 'clamp(24px, calc(24px + (52 - 24) * ((100vw - 360px) / (1250 - 360))), 52px)',
-        'fluid2': 'clamp(32px, calc(32px + (70 - 32) * ((100vw - 360px) / (1250 - 360))), 70px)',
+        'fluid': 'clamp(24px, calc(24px + (48 - 24) * ((100vw - 360px) / (1280 - 360))), 48px)',
+        'fluid2': 'clamp(32px, calc(32px + (64 - 32) * ((100vw - 360px) / (1280 - 360))), 64px)',
+
         'fluid3': 'clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / (720 - 360))), 24px)',
         'buttonfluid': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (720 - 360))), 20px)',
         'introdescription': 'clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / (720 - 360))), 24px)',
-        'livecardcontent': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (480 - 360))), 20px)',
-        'live16font': 'clamp(12px, calc(12px + (16 - 12) * ((100vw - 360px) / (480 - 360))), 16px)',
-        'maintitle': 'clamp(30px, calc(30px + (50 - 30) * ((100vw - 360px) / (1250 - 360))), 50px)',
-        'faqtitle': 'clamp(20px, calc(20px + (28 - 20) * ((100vw - 360px) / (967 - 360))), 28px)',
+
+
+        'maintitle': 'clamp(30px, calc(30px + (40 - 30) * ((100vw - 360px) / (1250 - 360))), 40px)',
+        'faqtitle': 'clamp(18px, calc(18px + (24 - 18) * ((100vw - 360px) / (967 - 360))), 24px)',
+        'faqcontent': 'clamp(14px, calc(14px + (18 - 14) * ((100vw - 360px) / (967 - 360))), 18px)',
         'howwork': 'clamp(16px, calc(16px + (26 - 16) * ((100vw - 360px) / (860 - 360))), 26px)',
         'howworkdescription': 'clamp(14px, calc(14px + (18 - 14) * ((100vw - 360px) / (860 - 360))), 18px)',
       },
@@ -63,19 +65,21 @@ export default {
         '3xl': '1415px',
       },
       width: {
-        'livecardWidth': 'calc(350px + (450 - 350) * ((100vw - 360px) / (480 - 360)))',
+        'livecardWidth': 'clamp(350px, calc(350px + (395 - 350) * ((100vw - 360px) / (480 - 360))), 395px)',
         'howworkwidth': 'clamp(150px, calc(150px + (200 - 150) * ((100vw - 360px) / (870 - 360))), 200px)',
+        'moonwidth': 'clamp(135px, calc(135px + (346 - 135) * ((100vw - 360px) / (1280 - 360))), 346px)',
       },
       height: {
-        'livecardHeight': 'clamp(600px, calc(600px + (700 - 600) * ((100vw - 360px) / (480 - 360))), 700px)',
-        'livecardHeaderHeight': 'clamp(120px, calc(120px + (170 - 120) * ((100vw - 360px) / (480 - 360))), 170px)',
         'livecardcontent': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (480 - 360))), 20px)',
+        'moonheight': 'clamp(135px, calc(135px + (346 - 135) * ((100vw - 360px) / (1280 - 360))), 346px)',
 
       },
       margin: {
-        'livecardLogo': 'clamp(90px, calc(90px + (140 - 90) * ((100vw - 360px) / (480 - 360))), 140px)',
-        'live20margin': 'clamp(10px, calc(10px + (20 - 10) * ((100vw - 360px) / (480 - 360))), 20px)',
-        'mainmargin': 'clamp(100px, calc(100px + (215 - 100) * ((100vw - 360px) / (1250 - 360))), 215px)',
+        'mainmargin': 'clamp(120px, calc(120px + (200 - 120) * ((100vw - 360px) / (1250 - 360))), 200px)',
+      },
+      padding: {
+
+        'moonpadding': 'clamp(35px, calc(35px + (93 - 35) * ((100vw - 360px) / (1280 - 360))), 93px)',
       }
     },
   },

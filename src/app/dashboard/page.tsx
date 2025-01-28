@@ -7,7 +7,7 @@ import FAQ from "./FAQ/page";
 export default function Dashboard() {
     return (
         <div className="flex">
-            <div className="w-[1500px] m-auto 2xl:mt-[130px] mt-[50px] sm:px-[30px]">
+            <div className="w-[1300px] m-auto xs:px-[25px]">
                 <Introduce />
                 <Featured />
                 <Howitworks />

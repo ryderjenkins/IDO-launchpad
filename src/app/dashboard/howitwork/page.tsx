@@ -17,29 +17,29 @@ const jost = Jost({
 export default function Howitworks() {
     return (
         <section className={`w-full pt-[120px] ${jost.className}`} id='howitworks'>
-            <h1 className='2xl:text-[50px] text-maintitle text-center lg2:text-left font-bold text-white'>HOW TO PARTICIPATE IN IDOS?</h1>
+            <h1 className='2xl:text-[40px] text-maintitle text-center lg2:text-left font-bold text-white'>HOW TO PARTICIPATE IN IDOS?</h1>
             <div className='hidden lg:block  mt-[-50px]'>
                 <Image
                     alt='howitworks'
                     src={IDOS}
-                    className='w-full'
+                    className='w-[95%]'
                 />
                 <div className='w-full grid-cols-4 gap-5 grid'>
                     <div>
-                        <h1 className='text-[26px] font-medium'>CONNECT YOUR WALLET</h1>
-                        <p className='text-[18px] font-light mt-[15px]'>Connect the wallet you use on the Sui or Aptos network to the website.</p>
+                        <h1 className='text-[24px] font-medium'>CONNECT YOUR WALLET</h1>
+                        <p className='text-[16px] font-light mt-[15px]'>Connect the wallet you use on the Sui or Aptos network to the website.</p>
                     </div>
                     <div>
-                        <h1 className='text-[26px] font-medium'>CHECK YOUR BALANCE</h1>
-                        <p className='text-[18px] font-light mt-[15px]'>Ensure that the amount you want to purchase is available in your wallet.</p>
+                        <h1 className='text-[24px] font-medium'>CHECK YOUR BALANCE</h1>
+                        <p className='text-[16px] font-light mt-[15px]'>Ensure that the amount you want to purchase is available in your wallet.</p>
                     </div>
                     <div>
-                        <h1 className='text-[26px] font-medium'>SELECT THE SALE</h1>
-                        <p className='text-[18px] font-light mt-[15px]'>Select the sale you wish to join and enter your purchase amount.</p>
+                        <h1 className='text-[24px] font-medium'>SELECT THE SALE</h1>
+                        <p className='text-[16px] font-light mt-[15px]'>Select the sale you wish to join and enter your purchase amount.</p>
                     </div>
                     <div>
-                        <h1 className='text-[26px] font-medium'>APPROVE AND PARTICIPATE</h1>
-                        <p className='text-[18px] font-light mt-[15px]'>Approve the wallet transactions to participate in the IDO.</p>
+                        <h1 className='text-[24px] font-medium'>APPROVE AND PARTICIPATE</h1>
+                        <p className='text-[16px] font-light mt-[15px]'>Approve the wallet transactions to participate in the IDO.</p>
                     </div>
                 </div>
             </div>
@@ -55,8 +55,8 @@ export default function Howitworks() {
                     />
 
                     <div>
-                        <h1 className='sm:text-[26px] text-howwork font-medium'>CONNECT YOUR WALLET</h1>
-                        <p className='sm:text-[18px] text-howworkdescription font-light mt-[15px]'>Connect the wallet you use on the Sui or Aptos network to the website.</p>
+                        <h1 className='sm:text-[24px] text-howwork font-medium'>CONNECT YOUR WALLET</h1>
+                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[15px]'>Connect the wallet you use on the Sui or Aptos network to the website.</p>
                     </div>
                 </div>
                 <div className='w-full flex items-center'>
@@ -67,8 +67,8 @@ export default function Howitworks() {
                     />
 
                     <div>
-                        <h1 className='sm:text-[26px] text-howwork font-medium'>CHECK YOUR BALANCE</h1>
-                        <p className='sm:text-[18px] text-howworkdescription font-light mt-[15px]'>Ensure that the amount you want to purchase is available in your wallet.</p>
+                        <h1 className='sm:text-[24px] text-howwork font-medium'>CHECK YOUR BALANCE</h1>
+                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[15px]'>Ensure that the amount you want to purchase is available in your wallet.</p>
                     </div>
                 </div>
                 <div className='w-full flex items-center'>
@@ -79,8 +79,8 @@ export default function Howitworks() {
                         className=' lg:w-[200px] w-howworkwidth'
                     />
                     <div>
-                        <h1 className='sm:text-[26px] text-howwork font-medium'>SELECT THE SALE</h1>
-                        <p className='sm:text-[18px] text-howworkdescription font-light mt-[15px]'>Select the sale you wish to join and enter your purchase amount.</p>
+                        <h1 className='sm:text-[24px] text-howwork font-medium'>SELECT THE SALE</h1>
+                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[15px]'>Select the sale you wish to join and enter your purchase amount.</p>
                     </div>
                 </div>
 
@@ -91,8 +91,8 @@ export default function Howitworks() {
                         className=' lg:w-[200px] w-howworkwidth'
                     />
                     <div>
-                        <h1 className='sm:text-[26px] text-howwork font-medium'>APPROVE AND PARTICIPATE</h1>
-                        <p className='sm:text-[18px] text-howworkdescription font-light mt-[15px]'>Approve the wallet transactions to participate in the IDO.</p>
+                        <h1 className='sm:text-[24px] text-howwork font-medium'>APPROVE AND PARTICIPATE</h1>
+                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[15px]'>Approve the wallet transactions to participate in the IDO.</p>
                     </div>
                 </div>
             </div>
