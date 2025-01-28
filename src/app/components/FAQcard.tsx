@@ -21,7 +21,7 @@ export default function FAQcard({ onToggle, isOpen, faqtitle, description }: { o
                 onClick={onToggle}
             >
                 <div className="w-full flex justify-between items-center">
-                    <h1 className="text-[28px] font-medium">{faqtitle}</h1>
+                    <h1 className="lg2:text-[28px] text-faqtitle font-medium">{faqtitle}</h1>
                     <Image
                         alt="dropdown"
                         src={Drop}
