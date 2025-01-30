@@ -43,11 +43,9 @@ export default function ToTopButton() {
     const [hoverstate, setHoverState] = useState(false);
     const setStateChange = () => {
         setHoverState(true);
-        console.log(hoverstate);
     };
     const removeStateChange = () => {
         setHoverState(false);
-        console.log(hoverstate);
     };
 
     return (

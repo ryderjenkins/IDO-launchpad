@@ -15,8 +15,8 @@ export default function Launchpad() {
 
 
     return (
-        <div className={`flex ${jost.className}`}>
-            <div className="w-[1440px] m-auto">
+        <div className={`flex w-full ${jost.className}`}>
+            <div className="w-[1300px] m-auto sm:px-[25px] px-0">
                 <LaunchpadIntro />
                 <InfoView />
             </div>

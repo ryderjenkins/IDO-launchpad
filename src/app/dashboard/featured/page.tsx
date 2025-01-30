@@ -24,21 +24,23 @@ export default function featured() {
             <h1 className='text-white 2xl:text-[40px] text-maintitle text-center lg2:text-left font-bold mb-[35px]'>FEATURED PROJECTS</h1>
             <div className="w-full mt-[80px]">
 
-                <div className="xl:w-full lg2:w-[900px] m-auto flex flex-wrap gap-y-[22px] justify-around xl:h-[610px] overflow-hidden">
-                    {CardInfo.map((item, index) => (
-                        <div key={index}>
-                            <LiveCard
-                                timeview={item.timeview}
-                                projectname={item.projectname}
-                                description={item.description}
-                                target={item.target}
-                                token={item.token}
-                                startday={item.startday}
-                                endday={item.endday}
-                                livestate={item.livestate}
-                            />
-                        </div>
-                    ))}
+                <div className="w-full flex lg2:justify-center">
+                    <div className="w-full flex justify-center lg:justify-between xs:gap-x-5 lg2:w-[909px] 4xl:w-full 4xl:h-[610px] 4xl:overflow-hidden flex-wrap gap-y-8">
+                        {CardInfo.map((item, index) => (
+                            <div key={index}>
+                                <LiveCard
+                                    timeview={item.timeview}
+                                    projectname={item.projectname}
+                                    description={item.description}
+                                    target={item.target}
+                                    token={item.token}
+                                    startday={item.startday}
+                                    endday={item.endday}
+                                    livestate={item.livestate}
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 <div className="w-full mt-[50px] flex items-center justify-center">
                     <Button1

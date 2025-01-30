@@ -43,69 +43,79 @@ export default function InfoView() {
         setSelect(false);
     }
     return (
-        <div className="w-full mt-[140px]">
-            <div className="w-full flex justify-between">
-                <div className="flex w-[400px] justify-between mb-[50px]">
+        <div className="w-full sm:mt-[140px] mt-launchpadmain2">
+            <div className="w-full lg:flex justify-between mb-[45px] sm:px-0 px-[10px]">
+                <input type="text" className="w-full mb-[16px] sm:text-[24px] text-launchpadsearch bg-transparent lg:hidden border-b-[1px] border-[#E3E3E3] py-1 transition duration-300 ease outline-none focus:border-[#27B17D] hover:border-slate-300 shadow-sm focus:shadow" placeholder="Search" />
+                <div className="flex xs:w-[350px] justify-between">
                     <button
-                        className={`w-[180px] h-[40px] bg-[#090A17] rounded-[10px] flex items-center justify-center 
+                        className={`w-[160px] h-[30px] bg-[#090A17] rounded-[10px] flex items-center justify-center 
                             ${select ? 'border-[1px] border-[#27B17D]' : ''}`}
                         onClick={LiveUpcomingView}
                     >
-                        <p className={`text-[#93949A] ${select ? 'text-white' : ''}`}>Live & Upcoming</p>
+                        <span className={`text-[#93949A] sm:text-[16px] text-launchpadbtntext ${select ? 'text-white' : ''}`}>Live & Upcoming</span>
                     </button>
 
                     <button
-                        className={`w-[180px] h-[40px] bg-[#090A17] rounded-[10px] text-white flex items-center justify-center
+                        className={`w-[160px] h-[30px] bg-[#090A17] rounded-[10px] text-white flex items-center justify-center
                             ${!select ? 'border-[1px] border-[#27B17D]' : ''}`}
                         onClick={CompletedView}
                     >
-                        <p className={`text-[#93949A] ${!select ? 'text-white' : ''}`}>Completed</p>
+                        <span className={`text-[#93949A] sm:text-[16px] text-launchpadbtntext ${!select ? 'text-white' : ''}`}>Completed</span>
                     </button>
                 </div>
-                <input type="text" placeholder="Search Project" className="w-[400px] h-[40px] bg-[#090A17] font-normal rounded-[10px] text-white px-[20px] text-[16px] outline-none focus:ring-1 ring-[#27B17D]" />
+                <input type="text" placeholder="Search Project" className="w-[400px] h-[30px] hidden lg:block bg-[#090A17] font-normal rounded-[10px] text-white px-[20px] text-[16px] outline-none focus:ring-1 ring-[#27B17D]" />
             </div>
 
             {select ?
-                <div className="w-full flex justify-between flex-wrap gap-y-8">
-                    {CardInfo.map((item, index) => (
-                        <div key={index}>
-                            <LiveCard
-                                timeview={item.timeview}
-                                projectname={item.projectname}
-                                description={item.description}
-                                target={item.target}
-                                token={item.token}
-                                startday={item.startday}
-                                endday={item.endday}
-                                livestate={item.livestate}
-                            />
-                        </div>
-                    ))}
+                <div className="w-full flex lg2:justify-center">
+                    <div className="w-full flex justify-center lg:justify-between xs:gap-x-5 lg2:w-[909px] 4xl:w-full flex-wrap gap-y-8">
+                        {CardInfo.map((item, index) => (
+                            <div key={index}>
+                                <LiveCard
+                                    timeview={item.timeview}
+                                    projectname={item.projectname}
+                                    description={item.description}
+                                    target={item.target}
+                                    token={item.token}
+                                    startday={item.startday}
+                                    endday={item.endday}
+                                    livestate={item.livestate}
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 :
-                <div className="w-full flex flex-col">
-                    <div className="w-full px-[30px] grid grid-cols-[2.5fr_1fr_1fr_1.5fr_1.5fr_2fr_1fr] mb-[50px]">
-                        <h1 className="text-[28px] font-medium">PROJECTS</h1>
-                        <h1 className="text-[28px] font-medium">Now</h1>
-                        <h1 className="text-[28px] font-medium">IDO</h1>
-                        <h1 className="text-[28px] font-medium">Ah1</h1>
-                        <h1 className="text-[28px] font-medium">When</h1>
-                        <h1 className="text-[28px] font-medium">Raise</h1>
-                    </div>
-                    <div className="border-[1px] border-[#27B17D] rounded-[10px] bg-[#030409] p-[30px]">
-                        {CompletedCardInfo.map((item, index) => (
-                            <CompletedCard
-                                key={index}
-                                Projectname={item.Projectname}
-                                now={item.now}
-                                ido={item.ido}
-                                ahl={item.ahl}
-                                when={item.when}
-                                raise={item.raise}
-                                handleback={index % 2 === 0 ? "none" : " "}
-                            />
-                        ))}
+                <div className="w-full flex justify-center">
+                    <div className="border-[1px] border-[#27B17D] rounded-[10px] bg-[#030409] p-[15px] sm:mx-0 mx-[10px] overflow-x-auto w-launchpadlivecardview sm:w-full">
+                        <table className="sm:w-full w-[660px] border-separate sm:border-spacing-y-0  border-spacing-y-2">
+                            <thead className="w-full h-[80px]">
+                                <tr className="w-full mb-[40px]">
+                                    <th className="min-w-48"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">PROJECTS</h1></th>
+                                    <th className="min-w-10"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">Now</h1></th>
+                                    <th className="min-w-10"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">IDO</h1></th>
+                                    <th className="min-w-10"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">Ah1</h1></th>
+                                    <th className="min-w-20"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">When</h1></th>
+                                    <th className="min-w-15"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">Raise</h1></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
 
+                            <tbody>
+                                {CompletedCardInfo.map((item, index) => (
+                                    <CompletedCard
+                                        key={index}
+                                        Projectname={item.Projectname}
+                                        now={item.now}
+                                        ido={item.ido}
+                                        ahl={item.ahl}
+                                        when={item.when}
+                                        raise={item.raise}
+                                        handleback={index % 2 === 0 ? "none" : " "}
+                                    />
+                                ))}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             }

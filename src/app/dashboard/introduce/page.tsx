@@ -46,7 +46,7 @@ export default function intruduce() {
             <div className="xl:w-[670px] mx-[10px] flex flex-col items-center xl:block mt-[30px] xl:mt-0">
                 <h1 className={`text-fluid xl:text-[48px] text-white ${jost.className}`}>FUEL YOUR DREAMS, LAUNCH</h1>
                 <h1 className={`text-fluid2 xl:text-[64px] text-white ${jost.className}`}><b>TO THE MOON!</b></h1>
-                <p className={`text-introdescription md:text-[20px] text-white block mt-[20px] font-light mb-[50px] ${jost.className}`}>Astromove identifies the best new tokens on the Aptos and Sui networks and launches them with a refund guarantee before they are listed on exchanges. Together, let’s redefine success in the Aptos and Sui ecosystems.</p>
+                <p className={`text-introdescription md:text-[20px] text-center text-white block mt-[20px] font-light mb-[50px] ${jost.className}`}>Astromove identifies the best new tokens on the Aptos and Sui networks and launches them with a refund guarantee before they are listed on exchanges. Together, let’s redefine success in the Aptos and Sui ecosystems.</p>
 
                 <a onClick={scrollToSection}>
                     <Button1

@@ -15,29 +15,35 @@ export default function CompletedCard(
         }
 ) {
     return (
-        <div
-            className={`w-full grid grid-cols-[2.5fr_1fr_1fr_1.5fr_1.5fr_2fr_1fr] items-center h-[60px] bg-[#E3E3E3] bg-opacity-10`}
+        <tr
+            className={`w-full sm:h-[50px] h-[30px] bg-[#E3E3E3] bg-opacity-10`}
             style={{
                 background: handleback
             }}
         >
-            <div className="flex items-center">
-                <Image
-                    alt="project-logo"
-                    src={CompleteCardLogo}
-                />
-                <h1 className="text-[18px] ml-[20px]">{Projectname}</h1>
-            </div>
-            <h1 className="text-[14px] font-normal">{now}</h1>
-            <h1 className="text-[14px] font-normal">{ido}</h1>
-            <h1 className="text-[14px] font-normal">{ahl}</h1>
-            <h1 className="text-[14px] font-normal">{when}</h1>
-            <h1 className="text-[14px] font-normal">{raise}</h1>
-            <button
-                className="text-white border-[1px] border-[#646769] w-[120px] h-[30px] rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c] "
-            >
-                <span className={`text-white text-[16px] font-medium`}>Project View</span>
-            </button>
-        </div>
+            <td className="w-[25vw]">
+                <div className="flex items-center">
+                    <Image
+                        alt="project-logo"
+                        src={CompleteCardLogo}
+                    />
+                    <h1 className="text-[16px] font-light ml-[20px]">{Projectname}</h1>
+                </div>
+            </td>
+            <td className=" w-[10vw]"><h1 className="text-[12px] font-thin">{now}</h1></td>
+            <td className=" w-[10vw]"><h1 className="text-[12px] font-thin">{ido}</h1></td>
+            <td className="w-[15vw]"><h1 className="text-[12px] font-thin">{ahl}</h1></td>
+            <td className="w-[20vw]"><h1 className="text-[12px] font-thin">{when}</h1></td>
+            <td className="w-[15vw]"><h1 className="text-[12px] font-thin">{raise}</h1></td>
+            <td className="w-[5vw]">
+                <div className="flex items-center justify-end">
+                    <button
+                        className="text-white border-[1px] border-[#646769] w-[120px] h-[30px] rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c] "
+                    >
+                        <span className={`text-white text-[14px] font-light`}>Project View</span>
+                    </button>
+                </div>
+            </td>
+        </tr>
     );
 }
