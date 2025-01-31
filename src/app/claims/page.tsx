@@ -93,15 +93,15 @@ const ClaimInfo = [
 export default function Claims() {
     return (
         <div className={`flex w-full ${jost.className}`}>
-            <div className="w-[1440px] m-auto mt-[80px]">
-                <input type="text" className="w-[400px] text-[24px] bg-transparent border-b-[1px] py-1 transition duration-300 ease outline-none focus:border-[#27B17D] hover:border-slate-300 shadow-sm focus:shadow" placeholder="Search" />
-                <div className='w-full px-[20px] mt-[45px] grid grid-cols-[1.5fr_1fr_1fr_1fr_1fr]'>
-                    <h1 className='text-[20px] font-normal'>Claims</h1>
-                    <h1 className='text-[20px] font-normal'>Investment</h1>
-                    <h1 className='text-[20px] font-normal'>Vesting</h1>
-                    <h1 className='text-[20px] font-normal'>Claim Start Date</h1>
+            <div className="w-[1300px] m-auto xs:mt-[80px] mt-claimheadermargin sm:px-[25px] px-[10px]">
+                <input type="text" className="xs:w-[400px] w-full xs:text-[24px] text-claimsearchfluid bg-transparent border-b-[1px] py-1 transition duration-300 ease outline-none focus:border-[#27B17D] hover:border-slate-300 shadow-sm focus:shadow" placeholder="Search" />
+                <div className='w-full lg:mt-[45px] mt-claimcardtablemargin grid grid-cols-[1.5fr_1fr_0.6fr_1fr_1.2fr]'>
+                    <h1 className='xs:text-[20px] text-claimtitle font-normal'>Claims</h1>
+                    <h1 className='text-[20px] font-normal hidden lg:block'>Investment</h1>
+                    <h1 className='text-[20px] font-normal hidden lg:block'>Vesting</h1>
+                    <h1 className='text-[20px] font-normal hidden lg:block'>Claim Start Date</h1>
                 </div>
-                <div className='w-full mt-[20px] flex flex-col gap-y-[25px]'>
+                <div className='w-full mt-[20px] flex flex-col lg:gap-y-[25px] gap-y-[16px]'>
                     {
                         ClaimInfo.map((item, index) => (
                             <ClaimCard

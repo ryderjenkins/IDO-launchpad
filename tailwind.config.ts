@@ -62,6 +62,11 @@ export default {
         'launchpadbtntext': 'clamp(14px, calc(14px + (16 - 14) * ((100vw - 360px) / (870 - 360))), 16px)',
         'launchpadsearch': 'clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / (680 - 360))), 24px)',
         'launchpadtablehead': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (680 - 360))), 20px)',
+        'claimcardfluid': 'clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / (870 - 360))), 24px)',
+        'claimcardfluid2': 'clamp(14px, calc(14px + (18 - 14) * ((100vw - 360px) / (870 - 360))), 18px)',
+        'claimcardfluid3': 'clamp(12px, calc(12px + (24 - 12) * ((100vw - 360px) / (870 - 360))), 24px)',
+        'claimsearchfluid': 'clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / (480 - 360))), 24px)',
+        'claimtitle': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (480 - 360))), 20px)',
       },
 
       screens: {
@@ -84,6 +89,7 @@ export default {
         'launchpadintrolwidth': 'clamp(350px, calc(350px + (622 - 350) * ((100vw - 360px) / (680 - 360))), 622px)',
         'launchpadviewbutton': 'clamp(120px, calc(120px + (160 - 120) * ((100vw - 360px) / (680- 360))), 160px)',
         'launchpadlivecardview': 'calc(100vw - 30px)',
+        'claimcardwidth': 'clamp(80px, calc(80px + (160 - 80) * ((100vw - 360px) / (870 - 360))), 160px)',
       },
       height: {
         'livecardcontent': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (480 - 360))), 20px)',
@@ -91,12 +97,16 @@ export default {
         'launchpadbuttonheight': 'clamp(25px, calc(25px + (50 - 25) * ((100vw - 360px) / (870 - 360))), 50px)',
         'launchpadheight': 'clamp(330px, calc(330px + (357 - 330) * ((100vw - 360px) / (480 - 360))), 357px)',
         'launchpadtable': 'clamp(30px, calc(30px + (50 - 30) * ((100vw - 360px) / (680 - 360))), 50px)',
+        'claimcardheight': 'clamp(30px, calc(30px + (50 - 30) * ((100vw - 360px) / (870 - 360))), 50px)',
+
 
       },
       margin: {
         'mainmargin': 'clamp(120px, calc(120px + (200 - 120) * ((100vw - 360px) / (1250 - 360))), 200px)',
         'launchpadmain': 'clamp(32px, calc(32px + (100 - 32) * ((100vw - 360px) / (480 - 360))), 100px)',
         'launchpadmain2': 'clamp(32px, calc(32px + (140 - 32) * ((100vw - 360px) / (480 - 360))), 140px)',
+        'claimcardtablemargin': 'clamp(16px, calc(16px + (45 - 16) * ((100vw - 360px) / (870 - 360))), 45px)',
+        'claimheadermargin': 'clamp(25px, calc(25px + (80 - 25) * ((100vw - 360px) / (480 - 360))), 80px)',
       },
       padding: {
 
