@@ -5,6 +5,8 @@ import Header from "./components/header";
 import "./globals.css";
 import { usePathname } from 'next/navigation';
 import ToTopButton from "./components/ToTopButton";
+import SideBar from "./components/SideBar";
+import { useState } from "react";
 
 
 export default function RootLayout({
@@ -25,15 +27,25 @@ export default function RootLayout({
     }
   };
 
+  const [sidebar, setSidebar] = useState(false);
+  const handleSidebar = () => {
+    setSidebar(true);
+  };
+
   return (
     <html lang="en">
-      <body className={`${getBackgroundImage()}`}>
+      <body className={`${getBackgroundImage()} ${sidebar ? 'overflow-hidden' : ''}`}>
 
-        <Header />
+        <Header
+          sidebarview={handleSidebar}
+        />
         {children}
         <Footer />
         <ToTopButton />
-
+        <SideBar
+          viewstate={sidebar}
+          sidebarclose={() => setSidebar(false)}
+        />
       </body>
     </html>
   );

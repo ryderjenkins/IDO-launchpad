@@ -67,6 +67,7 @@ export default {
         'claimcardfluid3': 'clamp(12px, calc(12px + (24 - 12) * ((100vw - 360px) / (870 - 360))), 24px)',
         'claimsearchfluid': 'clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / (480 - 360))), 24px)',
         'claimtitle': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (480 - 360))), 20px)',
+        'headerwallet': 'clamp(10px, calc(10px + (20 - 10) * ((100vw - 360px) / (520 - 360))), 20px)',
       },
 
       screens: {
@@ -90,6 +91,9 @@ export default {
         'launchpadviewbutton': 'clamp(120px, calc(120px + (160 - 120) * ((100vw - 360px) / (680- 360))), 160px)',
         'launchpadlivecardview': 'calc(100vw - 30px)',
         'claimcardwidth': 'clamp(80px, calc(80px + (160 - 80) * ((100vw - 360px) / (870 - 360))), 160px)',
+        'logowidth': 'clamp(100px, calc(100px + (180 - 100) * ((100vw - 360px) / (520 - 360))), 180px)',
+        'walletbuttonwidth': 'clamp(120px, calc(120px + (230 - 120) * ((100vw - 360px) / (520 - 360))), 230px)',
+
       },
       height: {
         'livecardcontent': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (480 - 360))), 20px)',
@@ -98,7 +102,8 @@ export default {
         'launchpadheight': 'clamp(330px, calc(330px + (357 - 330) * ((100vw - 360px) / (480 - 360))), 357px)',
         'launchpadtable': 'clamp(30px, calc(30px + (50 - 30) * ((100vw - 360px) / (680 - 360))), 50px)',
         'claimcardheight': 'clamp(30px, calc(30px + (50 - 30) * ((100vw - 360px) / (870 - 360))), 50px)',
-
+        'walletbuttonheight': 'clamp(25px, calc(25px + (40 - 25) * ((100vw - 360px) / (520 - 360))), 40px)',
+        'sidebariconheight': 'clamp(20px, calc(20px + (35 - 20) * ((100vw - 360px) / (520 - 360))), 35px)',
 
       },
       margin: {

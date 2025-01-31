@@ -11,6 +11,7 @@ import { usePathname } from "next/navigation";
 
 
 import { Jost } from 'next/font/google';
+
 const jost = Jost({
     subsets: ['latin'],
     display: 'swap',
@@ -19,7 +20,7 @@ const jost = Jost({
 });
 
 
-export default function Header() {
+export default function Header({ sidebarview }: { sidebarview: () => void }) {
 
     //Navbar bg control when scroll down or scroll up
     const [isSticky, setIsSticky] = useState(false);
@@ -65,13 +66,17 @@ export default function Header() {
         }
     }
 
+    // sidebar control when click on menu icon
+
+
+
     return (
         <div className={`${jost.className} w-full h-[90px] flex sticky top-0 z-10 backdrop-filter ${isSticky ? 'backdrop-blur-2xl bg-[#27b17c11]' : ''}`}>
-            <div className="w-[1460px] h-full m-auto flex justify-between items-center px-[10px]">
+            <div className="w-[1300px] h-full m-auto flex justify-between items-center sm:px-[25px] px-[10px]">
                 <Link href={"/"}>
-                    <Image src={HeaderLogo} alt="logo" />
+                    <Image src={HeaderLogo} alt="logo" className="xs2:w-[180px] w-logowidth min-w-[120px] h-auto" />
                 </Link>
-                <div className="lg:w-[400px] hidden sm:flex h-[40px] px-[10px] border-[#646a6b71] border-[1px] items-center justify-around gap-6 rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c]">
+                <div className="w-[306px] hidden lg:flex h-[40px] px-[10px] border-[#646a6b71] border-[1px] items-center justify-around gap-6 rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c]">
                     <Link
                         href={"/launchpad"}
                         className={`text-[20px] ${LaunchedPageColor()}`}>
@@ -85,20 +90,25 @@ export default function Header() {
                 </div>
 
                 <div className="flex items-center">
+
                     <button
-                        className="md:w-[250px] px-[15px] h-[40px] rounded-[10px] bg-[#27B17D] flex items-center justify-center gap-3 mx-[5px]"
+                        className="xs2:w-[230px] w-walletbuttonwidth px-[15px] xs2:h-[40px] h-walletbuttonheight rounded-[10px] bg-[#27B17D] flex items-center justify-center xs2:gap-3 gap-1 mx-[5px]"
                         onClick={openModal}
                     >
                         <Image
                             alt="wallet"
                             src={Wallet}
+                            className="xs2:w-[20px] w-[15px] h-auto"
                         />
-                        <span className="text-[20px] font-medium">Connect Wallet</span>
+                        <span className="xs2:text-[20px] text-headerwallet font-medium">Connect Wallet</span>
+
                     </button>
-                    <button className="sm:hidden ml-[10px]">
+
+                    <button className="lg:hidden flex ml-[10px]" onClick={sidebarview}>
                         <Image
                             alt="menu"
                             src={Menu}
+                            className="xs2:h-[35px] h-sidebariconheight w-auto"
                         />
                     </button>
                 </div>
@@ -108,6 +118,7 @@ export default function Header() {
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
             />
+
         </div>
 
     )

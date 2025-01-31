@@ -10,7 +10,7 @@ export default function ClaimCard({ projectName, investment, vesting, startday, 
         stateview: boolean,
     }) {
     return (
-        <div className="w-full rounded-[10px] py-[15px] border-[1px] border-[#E3E3E3] border-opacity-40 bg-gradient-to-r backdrop-blur-[16px] from-[#e3e3e309] to-[#e3e3e310]">
+        <div className="w-full rounded-[10px] py-[10px] border-[1px] border-[#E3E3E3] border-opacity-40 bg-gradient-to-r backdrop-blur-[16px] from-[#e3e3e309] to-[#e3e3e310]">
             <div className='w-full flex justify-between lg:grid grid-cols-[1.5fr_1fr_0.6fr_1fr_1.2fr] items-center '>
                 <div className="flex items-center lg:ml-[10px] ml-[20px]">
                     <Image
@@ -30,7 +30,7 @@ export default function ClaimCard({ projectName, investment, vesting, startday, 
                     }
                 </div>
             </div>
-            <div className='w-full flex justify-between lg:hidden mt-[15px] items-center px-[20px]'>
+            <div className='w-full flex justify-between lg:hidden mt-[5px] items-center px-[20px]'>
                 <div>
                     <h1 className='lg:text-[18px] text-claimcardfluid2 text-[#E3E3E3]'>Investment</h1>
                     <h1 className='lg:text-[18px] text-claimcardfluid2'>{investment}</h1>
