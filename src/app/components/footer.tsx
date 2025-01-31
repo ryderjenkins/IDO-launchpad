@@ -1,6 +1,5 @@
 'use client'
 import Image from "next/image";
-import Button2 from "./button2";
 import FooterLogo from '../../../public/assets/category/footer.png';
 import FooterDiscord from '../../../public/assets/icon/Fdiscord.png';
 import FooterTwitter from '../../../public/assets/icon/Fx.png';
@@ -17,23 +16,23 @@ const jost = Jost({
 export default function Footer() {
     return (
         <footer className={`flex ${jost.className}`}>
-            <div className="w-[1440px] m-auto  mt-[150px]">
+            <div className="w-[1300px] m-auto  mt-[150px] px-[25px]">
                 <div className="w-full h-[1px] bg-[#27B17D]"></div>
-                <div className="w-full flex items-end justify-between my-[60px]">
-                    <div>
+                <div className="w-full flex items-end justify-between sm:py-[40px] py-[25px]">
+                    <div className="sm:block hidden">
                         <Image
                             alt="footer-logo"
                             src={FooterLogo}
-                            className="w-[390px]"
+                            className="w-[320px]"
                         />
-                        <h1 className="mt-[70px] text-[16px] font-light">Copyright Astromove 2025</h1>
+                        <h1 className="mt-[70px] text-[14px] font-light">Copyright Astromove 2025</h1>
                     </div>
-                    <div className="w-[300px]">
-                        <Button2
-                            width="300px"
-                            height="50px"
-                            name="Join the Community"
-                        />
+                    <div className="w-[260px] sm:block hidden">
+                        <button
+                            className="rounded-[10px] bg-[#27B17D] w-full h-[35px]"
+                        >
+                            <span className={`text-[16px] font-medium ${jost.className}`}>Join the Community</span>
+                        </button>
                         <div className="flex my-[50px] w-full justify-between">
                             <a href="#"> <Image alt="discord" src={FooterDiscord} /> </a>
                             <a href="#"> <Image alt="twitter" src={FooterTwitter} /> </a>
@@ -42,11 +41,43 @@ export default function Footer() {
                         </div>
                         <div className="flex w-full justify-between">
                             <a href="#">
-                                <h1 className="text-[18px] font-semibold">Terms and Conditions</h1>
+                                <h1 className="text-[16px] font-semibold">Terms and Conditions</h1>
                             </a>
                             <a href="#">
-                                <h1 className="text-[18px] font-semibold">Docs</h1>
+                                <h1 className="text-[16px] font-semibold">Docs</h1>
                             </a>
+                        </div>
+                    </div>
+
+                    <div className="sm:hidden w-full flex flex-col items-center">
+                        <div className="sm:w-[260px] w-footerlogo">
+                            <Image
+                                alt="footer-logo"
+                                src={FooterLogo}
+                                className="w-[320px]"
+                            />
+                            <button
+                                className="rounded-[10px] bg-[#27B17D] my-[20px] w-full h-[35px]"
+                            >
+                                <span className={`text-[16px] font-medium ${jost.className}`}>Join the Community</span>
+                            </button>
+                            <div className="flex my-[20px] w-full justify-between">
+                                <a href="#"> <Image alt="discord" src={FooterDiscord} /> </a>
+                                <a href="#"> <Image alt="twitter" src={FooterTwitter} /> </a>
+                                <a href="#"> <Image alt="telegram" src={FooterTelegram} /> </a>
+                                <a href="#"> <Image alt="medium" src={FooterMedium} /> </a>
+                            </div>
+                        </div>
+                        <div className="w-full flex justify-between items-center mt-[35px]">
+                            <h1 className="xs:text-[14px] text-[10px] font-light">Copyright Astromove 2025</h1>
+                            <div className="flex xs:w-[200px] w-[160px] justify-between">
+                                <a href="#">
+                                    <h1 className="xs:text-[16px] text-[12px] font-semibold">Terms and Conditions</h1>
+                                </a>
+                                <a href="#">
+                                    <h1 className="xs:text-[16px] text-[12px] font-semibold">Docs</h1>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

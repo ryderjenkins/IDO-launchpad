@@ -93,6 +93,8 @@ export default {
         'claimcardwidth': 'clamp(80px, calc(80px + (160 - 80) * ((100vw - 360px) / (870 - 360))), 160px)',
         'logowidth': 'clamp(100px, calc(100px + (180 - 100) * ((100vw - 360px) / (520 - 360))), 180px)',
         'walletbuttonwidth': 'clamp(120px, calc(120px + (230 - 120) * ((100vw - 360px) / (520 - 360))), 230px)',
+        'footerlogo': 'clamp(200px, calc(200px + (260 - 200) * ((100vw - 360px) / (680 - 360))), 260px)',
+
 
       },
       height: {
