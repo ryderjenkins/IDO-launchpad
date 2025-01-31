@@ -4,13 +4,6 @@ import Image from 'next/image';
 import ToTopIcon from '../../../public/assets/icon/ToTopIcon.png';
 
 
-import { Jost } from 'next/font/google';
-const jost = Jost({
-    subsets: ['latin'],
-    display: 'swap',
-    variable: '--font-jost',
-
-});
 
 export default function ToTopButton() {
 
@@ -39,36 +32,16 @@ export default function ToTopButton() {
         };
     }, []);
 
-    //scroll to top button hover event capture and add effect
-    const [hoverstate, setHoverState] = useState(false);
-    const setStateChange = () => {
-        setHoverState(true);
-    };
-    const removeStateChange = () => {
-        setHoverState(false);
-    };
-
     return (
 
         < div className="fixed bottom-5 right-5 flex items-center " style={{ display: isVisible ? 'flex' : 'none' }} >
-
-            <div
-                className={`${jost.className} absolute right-[25px] flex overflow-hidden duration-500 ease-out bg-[#27B17D] rounded-[15px] ${hoverstate ? 'px-[15px]' : 'border-none'}`}
-                style={{ width: hoverstate ? '100px' : '0' }}>
-                <h1 className='text-[20px] font-bol'>To</h1>
-                <h1 className='ml-[5px] text-[20px] '>Top</h1>
-            </div>
-
             <button
                 onClick={scrollToTop}
-                className={`bg-[#27B17D] flex justify-center items-center p-[10px] rounded-[25PX] z-20 duration-500 ease-out`}
-                onMouseEnter={setStateChange}
-                onMouseLeave={removeStateChange}
+                className={`flex justify-center items-center w-[50px] h-[50px] rounded-[25PX] border-1 border-[#E3E3E3] border-opacity-40 bg-gradient-to-l backdrop-blur-[24px] from-[#e3e3e309] to-[#e3e3e310] shadow-md shadow-[#27B17D] z-20 duration-500 ease-out`}
             >
                 <Image
                     alt="To Top"
                     src={ToTopIcon}
-                    className="w-[30px] h-[30px]"
                 />
             </button>
         </div >
