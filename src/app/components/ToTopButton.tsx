@@ -25,8 +25,15 @@ export default function ToTopButton() {
         });
     };
 
+    const refresh = () => {
+        if (window.scrollY > 50) {
+            setIsVisible(true);
+        }
+    }
+
     useEffect(() => {
         window.addEventListener('scroll', toggleVisibility);
+        refresh();
         return () => {
             window.removeEventListener('scroll', toggleVisibility);
         };

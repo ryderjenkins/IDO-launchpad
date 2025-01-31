@@ -2,6 +2,7 @@
 import LiveCard from "../../components/livecard";
 import Button1 from "../../components/button1";
 import { Jost } from 'next/font/google';
+import Link from "next/link";
 
 const jost = Jost({
     subsets: ['latin'],
@@ -43,11 +44,14 @@ export default function featured() {
                     </div>
                 </div>
                 <div className="w-full mt-[50px] flex items-center justify-center">
-                    <Button1
-                        name="View More"
-                        width="140px"
-                        height="40px"
-                    />
+                    <Link href={'/launchpad'}>
+                        <Button1
+                            name="View More"
+                            width="140px"
+                            height="40px"
+                        />
+                    </Link>
+
                 </div>
             </div>
         </div>
