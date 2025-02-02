@@ -1,8 +1,7 @@
 'use client'
 import LiveCard from "../../components/livecard";
-import Button1 from "../../components/button1";
 import { Jost } from 'next/font/google';
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const jost = Jost({
     subsets: ['latin'],
@@ -19,7 +18,14 @@ const CardInfo = [
     { timeview: "none", livestate: "none", projectname: "PROJECT NAME", description: "Lorem ipsum dolor sit amet consectetur. Etiam scelerisque lacus mi id.", target: "900.000 USD", token: "0.00099 USD", startday: "JAN 14, 14:00 UTC", endday: "JAN 21, 14:00 UTC" },
 ];
 
-export default function featured() {
+export default function Featured() {
+
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push('/launchpad');
+    };
+
     return (
         <div className={`w-full m-auto xl:mt-[200px] mt-mainmargin ${jost.className} `}>
             <h1 className='text-white 2xl:text-[40px] text-maintitle text-center lg2:text-left font-bold mb-[35px]'>FEATURED PROJECTS</h1>
@@ -44,13 +50,12 @@ export default function featured() {
                     </div>
                 </div>
                 <div className="w-full mt-[50px] flex items-center justify-center">
-                    <Link href={'/launchpad'}>
-                        <Button1
-                            name="View More"
-                            width="140px"
-                            height="40px"
-                        />
-                    </Link>
+                    <button
+                        className="border-[1px] border-[#646769] rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c] w-[140px] h-[40px]"
+                        onClick={handleClick}
+                    >
+                        <span className={`text-buttonfluid md:text-[16px] font-medium ${jost.className}`}>View More</span>
+                    </button>
 
                 </div>
             </div>
