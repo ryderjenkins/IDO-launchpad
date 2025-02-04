@@ -4,7 +4,7 @@ import Image from "next/image";
 import HeaderLogo from "../../../public/assets/icon/headerlogo.png";
 import Wallet from "../../../public/assets/icon/wallet.png";
 import Menu from '../../../public/assets/icon/responsivemenu.png';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import WalletModal from "./WalletModal";
 import { usePathname } from "next/navigation";
 
@@ -23,25 +23,25 @@ const jost = Jost({
 export default function Header({ sidebarview }: { sidebarview: () => void }) {
 
     //Navbar bg control when scroll down or scroll up
-    const [isSticky, setIsSticky] = useState(false);
+    // const [isSticky, setIsSticky] = useState(false);
 
-    const handleScroll = () => {
-        const scrollTop = window.scrollY;
-        setIsSticky(scrollTop > 50);
-    };
+    // const handleScroll = () => {
+    //     const scrollTop = window.scrollY;
+    //     setIsSticky(scrollTop > 50);
+    // };
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
+    // useEffect(() => {
+    //     window.addEventListener('scroll', handleScroll);
 
-        if (window.scrollY > 0) {
-            setIsSticky(true);
-        }
+    //     if (window.scrollY > 0) {
+    //         setIsSticky(true);
+    //     }
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
 
-    }, []);
+    // }, []);
 
     //Modal view when click on wallet icon
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -71,7 +71,7 @@ export default function Header({ sidebarview }: { sidebarview: () => void }) {
 
 
     return (
-        <div className={`${jost.className} w-full h-[90px] flex sticky top-0 z-10 backdrop-filter ${isSticky ? 'backdrop-blur-2xl bg-[#27b17c11]' : ''}`}>
+        <div className={`${jost.className} w-full h-[90px] flex sticky top-0 z-10 backdrop-filter `}>
             <div className="w-[1300px] h-full m-auto flex justify-between items-center sm:px-[25px] px-[10px]">
                 <Link href={"/"}>
                     <Image src={HeaderLogo} alt="logo" className="xs2:w-[180px] w-logowidth min-w-[120px] h-auto" />
