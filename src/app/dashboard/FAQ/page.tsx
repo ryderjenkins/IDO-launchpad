@@ -22,37 +22,36 @@ export default function FAQ() {
     const data: DataItem[] = [
         {
             title: 'What is Astromove?',
-            details: 'Lorem ipsum dolor sit amet consectetur. Suspendisse tempus congue orci semper consectetur bibendum mi. Arcu dignissim porttitor pretium diam nec faucibus. Consectetur donec phasellus vitae eros enim ut sed et tortor. At sed diam tristique sit mi ante sit. Egestas adipiscing tincidunt fermentum cras eu massa convallis lectus aliquet. Potenti purus nullam nec nunc risus ut rhoncus. Augue in nam quisque massa est. Tincidunt a diam sed magnis sed egestas vel nibh scelerisque. Rhoncus aliquam vel pharetra curabitur euismod.',
+            details: 'Astromove is a launchpad platform that offers the best new tokens on the Sui and Aptos networks to users with a refund guarantee before they are listed on exchanges.',
         },
         {
-            title: 'What is an IDO?',
-            details: 'Lorem ipsum dolor sit amet consectetur. Suspendisse tempus congue orci semper consectetur bibendum mi. Arcu dignissim porttitor pretium diam nec faucibus. Consectetur donec phasellus vitae eros enim ut sed et tortor. At sed diam tristique sit mi ante sit. Egestas adipiscing tincidunt fermentum cras eu massa convallis lectus aliquet. Potenti purus nullam nec nunc risus ut rhoncus. Augue in nam quisque massa est. Tincidunt a diam sed magnis sed egestas vel nibh scelerisque. Rhoncus aliquam vel pharetra curabitur euismod.',
+            title: '⁠How can I participate in IDOs?',
+            details: 'Astromove is a launchpad platform that offers the best new tokens on the Sui and Aptos networks to users with a refund guarantee before they are listed on exchanges.',
         },
         {
-            title: 'How can I get back the purchased on an IDO?',
-            details: 'Lorem ipsum dolor sit amet consectetur. Suspendisse tempus congue orci semper consectetur bibendum mi. Arcu dignissim porttitor pretium diam nec faucibus. Consectetur donec phasellus vitae eros enim ut sed et tortor. At sed diam tristique sit mi ante sit. Egestas adipiscing tincidunt fermentum cras eu massa convallis lectus aliquet. Potenti purus nullam nec nunc risus ut rhoncus. Augue in nam quisque massa est. Tincidunt a diam sed magnis sed egestas vel nibh scelerisque. Rhoncus aliquam vel pharetra curabitur euismod.',
+            title: '⁠Why only Sui and Aptos?',
+            details: 'Astromove is a launchpad platform that offers the best new tokens on the Sui and Aptos networks to users with a refund guarantee before they are listed on exchanges.',
         },
         {
-            title: 'How does Astromove work?',
-            details: 'Lorem ipsum dolor sit amet consectetur. Suspendisse tempus congue orci semper consectetur bibendum mi. Arcu dignissim porttitor pretium diam nec faucibus. Consectetur donec phasellus vitae eros enim ut sed et tortor. At sed diam tristique sit mi ante sit. Egestas adipiscing tincidunt fermentum cras eu massa convallis lectus aliquet. Potenti purus nullam nec nunc risus ut rhoncus. Augue in nam quisque massa est. Tincidunt a diam sed magnis sed egestas vel nibh scelerisque. Rhoncus aliquam vel pharetra curabitur euismod.',
+            title: 'How can I get information about IDO projects?',
+            details: 'Astromove is a launchpad platform that offers the best new tokens on the Sui and Aptos networks to users with a refund guarantee before they are listed on exchanges.',
         },
         {
-            title: 'What is the cost of Astromove?',
-            details: 'Lorem ipsum dolor sit amet consectetur. Suspendisse tempus congue orci semper consectetur bibendum mi. Arcu dignissim porttitor pretium diam nec faucibus. Consectetur donec phasellus vitae eros enim ut sed et tortor. At sed diam tristique sit mi ante sit. Egestas adipiscing tincidunt fermentum cras eu massa convallis lectus aliquet. Potenti purus nullam nec nunc risus ut rhoncus. Augue in nam quisque massa est. Tincidunt a diam sed magnis sed egestas vel nibh scelerisque. Rhoncus aliquam vel pharetra curabitur euismod.',
+            title: '⁠Where can I withdraw the tokens I received from the IDO to my wallet?',
+            details: 'Astromove is a launchpad platform that offers the best new tokens on the Sui and Aptos networks to users with a refund guarantee before they are listed on exchanges.',
         },
         {
-            title: 'How do I get started with Astromove?',
-            details: 'Lorem ipsum dolor sit amet consectetur. Suspendisse tempus congue orci semper consectetur bibendum mi. Arcu dignissim porttitor pretium diam nec faucibus. Consectetur donec phasellus vitae eros enim ut sed et tortor. At sed diam tristique sit mi ante sit. Egestas adipiscing tincidunt fermentum cras eu massa convallis lectus aliquet. Potenti purus nullam nec nunc risus ut rhoncus. Augue in nam quisque massa est. Tincidunt a diam sed magnis sed egestas vel nibh scelerisque. Rhoncus aliquam vel pharetra curabitur euismod.',
+            title: '⁠What should I pay attention to when investing?',
+            details: 'Astromove is a launchpad platform that offers the best new tokens on the Sui and Aptos networks to users with a refund guarantee before they are listed on exchanges.',
         },
         {
-            title: 'What is the refund policy?',
-            details: 'Lorem ipsum dolor sit amet consectetur. Suspendisse tempus congue orci semper consectetur bibendum mi. Arcu dignissim porttitor pretium diam nec faucibus. Consectetur donec phasellus vitae eros enim ut sed et tortor. At sed diam tristique sit mi ante sit. Egestas adipiscing tincidunt fermentum cras eu massa convallis lectus aliquet. Potenti purus nullam nec nunc risus ut rhoncus. Augue in nam quisque massa est. Tincidunt a diam sed magnis sed egestas vel nibh scelerisque. Rhoncus aliquam vel pharetra curabitur euismod.',
+            title: 'Do I need KYC to participate in IDOs?',
+            details: 'Astromove is a launchpad platform that offers the best new tokens on the Sui and Aptos networks to users with a refund guarantee before they are listed on exchanges.',
         },
         {
-            title: 'What is the cost of Astromove?',
-            details: 'Lorem ipsum dolor sit amet consectetur. Suspendisse tempus congue orci semper consectetur bibendum mi. Arcu dignissim porttitor pretium diam nec faucibus. Consectetur donec phasellus vitae eros enim ut sed et tortor. At sed diam tristique sit mi ante sit. Egestas adipiscing tincidunt fermentum cras eu massa convallis lectus aliquet. Potenti purus nullam nec nunc risus ut rhoncus. Augue in nam quisque massa est. Tincidunt a diam sed magnis sed egestas vel nibh scelerisque. Rhoncus aliquam vel pharetra curabitur euismod.',
-        }
-
+            title: 'What is the refund policy and how does it work?',
+            details: 'Astromove is a launchpad platform that offers the best new tokens on the Sui and Aptos networks to users with a refund guarantee before they are listed on exchanges.',
+        },
 
     ];
 

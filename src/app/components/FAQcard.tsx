@@ -21,7 +21,7 @@ export default function FAQcard({ onToggle, isOpen, faqtitle, description }: { o
                 onClick={onToggle}
             >
                 <div className="w-full flex justify-between items-center">
-                    <h1 className="lg2:text-[24px] text-faqtitle font-medium">{faqtitle}</h1>
+                    <h1 className="lg2:text-[24px] text-faqtitle font-[500]">{faqtitle}</h1>
                     <Image
                         alt="dropdown"
                         src={Drop}
@@ -29,7 +29,7 @@ export default function FAQcard({ onToggle, isOpen, faqtitle, description }: { o
                     />
                 </div>
 
-                <p className={`lg2:text-[18px] text-faqcontent font-light text-white overflow-hidden duration-400 ease-in-out ${isOpen ? 'max-h-[500px]  mt-[30px] mb-[20px]' : 'max-h-0'}`}>
+                <p className={`lg2:text-[20px] text-faqcontent font-[300] text-white overflow-hidden duration-500 ease-out ${isOpen ? 'max-h-[90px] mt-[30px] mb-[20px]' : 'max-h-0'}`}>
                     {description}
                 </p>
 
