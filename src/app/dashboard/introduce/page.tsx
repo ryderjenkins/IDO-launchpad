@@ -29,7 +29,7 @@ export default function intruduce() {
     };
 
     return (
-        <div className="w-full m-auto xl:mt-[105px] mt-[30px] xl:flex justify-between">
+        <div className="w-full m-auto xl:mt-[90px] mt-[30px] xl:flex justify-between">
             <div className='w-full flex justify-center xl:hidden '>
                 <div className='flex items-center justify-center xl:w-[532px] xl:p-[93px] p-moonpadding rounded-[10px] border-1 border-[#27B17D]'>
                     <div className="xl:w-[346px] w-moonwidth h-moonheight xl:h-[346px] bg-no-repeat bg-cover flex items-center justify-center" style={{ backgroundImage: "url(assets/category/moon.png)" }}>
