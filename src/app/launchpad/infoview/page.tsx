@@ -44,9 +44,9 @@ export default function InfoView() {
     }
     return (
         <div className="w-full sm:mt-[140px] mt-launchpadmain2">
-            <div className="w-full lg:flex justify-between mb-[45px] sm:px-0 px-[10px]">
+            <div className="w-full lg:flex justify-between mb-[40px] sm:px-0 px-[10px]">
                 <input type="text" className="w-full mb-[16px] sm:text-[24px] text-launchpadsearch bg-transparent lg:hidden border-b-[1px] border-[#E3E3E3] py-1 transition duration-300 ease outline-none focus:border-[#27B17D] hover:border-slate-300 shadow-sm focus:shadow" placeholder="Search" />
-                <div className="flex xs:w-[350px] justify-between">
+                <div className="flex xs:w-[346px] justify-between">
                     <button
                         className={`w-[160px] h-[30px] bg-[#090A17] rounded-[10px] flex items-center justify-center 
                             ${select ? 'border-[1px] border-[#27B17D]' : ''}`}
@@ -63,7 +63,7 @@ export default function InfoView() {
                         <span className={`text-[#93949A] sm:text-[16px] text-launchpadbtntext ${!select ? 'text-white' : ''}`}>Completed</span>
                     </button>
                 </div>
-                <input type="text" placeholder="Search Project" className="w-[400px] h-[30px] hidden lg:block bg-[#090A17] font-normal rounded-[10px] text-white px-[20px] text-[16px] outline-none focus:ring-1 ring-[#27B17D]" />
+                <input type="text" placeholder="Search" className="w-[387px] h-[30px] sm:text-[24px] text-launchpadsearch bg-transparent lg:block hidden border-b-[1px] border-[#949393] py-1 transition duration-300 ease outline-none focus:border-[#27B17D] hover:border-slate-300 shadow-sm focus:shadow" />
             </div>
 
             {select ?

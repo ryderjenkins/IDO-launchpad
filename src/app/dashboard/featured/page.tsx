@@ -51,10 +51,10 @@ export default function Featured() {
                 </div>
                 <div className="w-full mt-[50px] flex items-center justify-center">
                     <button
-                        className="border-[1px] border-[#646769] rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c] w-[140px] h-[40px]"
+                        className="border-[1px] border-[#646769] rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c] w-[120px] h-[30px]"
                         onClick={handleClick}
                     >
-                        <span className={`text-buttonfluid md:text-[16px] font-medium ${jost.className}`}>View More</span>
+                        <span className={`text-buttonfluid md:text-[16px] font-light ${jost.className}`}>View More</span>
                     </button>
 
                 </div>

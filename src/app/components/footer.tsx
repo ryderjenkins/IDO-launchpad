@@ -16,7 +16,7 @@ const jost = Jost({
 export default function Footer() {
     return (
         <footer className={`flex ${jost.className}`}>
-            <div className="w-[1300px] m-auto  mt-[150px] px-[25px]">
+            <div className="w-[1300px] m-auto  mt-[150px] sm:mt-[290px] px-[25px]">
                 <div className="w-full h-[1px] bg-[#27B17D]"></div>
                 <div className="w-full flex items-end justify-between sm:pb-[58px]">
                     <div className="sm:block hidden">
@@ -34,17 +34,17 @@ export default function Footer() {
                             <span className={`text-[16px] font-medium ${jost.className}`}>Join the Community</span>
                         </button>
                         <div className="flex mt-[36px] mb-[45px] w-full justify-between">
-                            <a href="#"> <Image alt="discord" src={FooterDiscord} /> </a>
                             <a href="#"> <Image alt="twitter" src={FooterTwitter} /> </a>
                             <a href="#"> <Image alt="telegram" src={FooterTelegram} /> </a>
+                            <a href="#"> <Image alt="discord" src={FooterDiscord} /> </a>
                             <a href="#"> <Image alt="medium" src={FooterMedium} /> </a>
                         </div>
                         <div className="flex w-full justify-between">
                             <a href="#">
-                                <h1 className="text-[16px] font-semibold">Terms and Conditions</h1>
+                                <h1 className="text-[16px] font-400">Terms and Conditions</h1>
                             </a>
                             <a href="#">
-                                <h1 className="text-[16px] font-semibold">Docs</h1>
+                                <h1 className="text-[16px] font-400">Docs</h1>
                             </a>
                         </div>
                     </div>
@@ -62,9 +62,9 @@ export default function Footer() {
                                 <span className={`text-[16px] font-medium ${jost.className}`}>Join the Community</span>
                             </button>
                             <div className="flex my-[20px] w-full justify-between">
-                                <a href="#"> <Image alt="discord" src={FooterDiscord} /> </a>
                                 <a href="#"> <Image alt="twitter" src={FooterTwitter} /> </a>
                                 <a href="#"> <Image alt="telegram" src={FooterTelegram} /> </a>
+                                <a href="#"> <Image alt="discord" src={FooterDiscord} /> </a>
                                 <a href="#"> <Image alt="medium" src={FooterMedium} /> </a>
                             </div>
                         </div>
@@ -72,10 +72,10 @@ export default function Footer() {
                             <h1 className="xs:text-[14px] text-[10px] font-light">Copyright Astromove 2025</h1>
                             <div className="flex xs:w-[200px] w-[160px] justify-between">
                                 <a href="#">
-                                    <h1 className="xs:text-[16px] text-[12px] font-semibold">Terms and Conditions</h1>
+                                    <h1 className="xs:text-[16px] text-[12px] font-400">Terms and Conditions</h1>
                                 </a>
                                 <a href="#">
-                                    <h1 className="xs:text-[16px] text-[12px] font-semibold">Docs</h1>
+                                    <h1 className="xs:text-[16px] text-[12px] font-400">Docs</h1>
                                 </a>
                             </div>
                         </div>

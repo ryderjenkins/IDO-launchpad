@@ -29,7 +29,7 @@ export default function intruduce() {
     };
 
     return (
-        <div className="w-full m-auto xl:mt-[90px] mt-[30px] xl:flex justify-between">
+        <div className="w-full m-auto xl:mt-[105px] mt-[30px] xl:flex justify-between">
             <div className='w-full flex justify-center xl:hidden '>
                 <div className='flex items-center justify-center xl:w-[532px] xl:p-[93px] p-moonpadding rounded-[10px] border-1 border-[#27B17D]'>
                     <div className="xl:w-[346px] w-moonwidth h-moonheight xl:h-[346px] bg-no-repeat bg-cover flex items-center justify-center" style={{ backgroundImage: "url(assets/category/moon.png)" }}>
@@ -43,22 +43,22 @@ export default function intruduce() {
                 </div>
             </div>
 
-            <div className="xl:w-[670px] mx-[10px] flex flex-col items-center font-normal xl:block mt-[30px] xl:mt-0">
-                <h1 className={`text-fluid xl:text-[48px] sm:leading-[48px] sm:mt-[15px] sm:mb-[20px] text-white ${jost.className}`}>FUEL YOUR DREAMS, LAUNCH</h1>
-                <h1 className={`text-fluid2 xl:text-[64px] sm:leading-[80px] font-medium text-white ${jost.className}`}><b>TO THE MOON!</b></h1>
-                <p className={`text-introdescription md:text-[20px] xl:text-left text-center text-white block font-extralight mb-[50px] ${jost.className}`}>Astromove identifies the best new tokens on the Aptos and Sui networks and launches them with a refund guarantee before they are listed on exchanges. Together, let’s redefine success in the Aptos and Sui ecosystems.</p>
+            <div className="xl:w-[670px] mr-[10px] flex flex-col items-center xl:block mt-[30px] xl:mt-0">
+                <h1 className={`text-fluid xl:text-[48px] sm:leading-[48px] sm:mt-[15px] font-350 sm:mb-[20px] text-[#E3E3E3] ${jost.className}`}>FUEL YOUR DREAMS, LAUNCH</h1>
+                <h1 className={`text-fluid2 xl:text-[64px] sm:leading-[64px] font-550 tracking-1 text-[#E3E3E3] sm:mb-[8px] ${jost.className}`}>TO THE MOON!</h1>
+                <p className={`text-introdescription md:text-[20px] xl:text-left text-center tracking-2 text-[#E3E3E3] block font-200 mb-[33px] ${jost.className}`}>Astromove identifies the best new tokens on the Aptos and Sui networks and launches them with a refund guarantee before they are listed on exchanges. Together, let’s redefine success in the Aptos and Sui ecosystems.</p>
 
-                <a onClick={scrollToSection}>
+                <a onClick={scrollToSection} className='ml-[7px]'>
                     <Button1
-                        name={"How it works"}
+                        name={"How it works?"}
                         width='182px'
                         height='50px'
                     />
                 </a>
-                <p className={`block my-[30px] text-white text-fluid3 md:text-[20px] font-light ${jost.className}`}>
+                <p className={`block my-[15px] text-[#E3E3E3] text-fluid3 md:text-[20px] font-200 ${jost.className}`}>
                     Supported Blockchains:
                 </p>
-                <div className='px-8 flex gap-8'>
+                <div className='px-[36px] flex gap-[36px]'>
                     <Image
                         alt={"aptos"}
                         src={aptos}

@@ -22,6 +22,20 @@ export default {
           '50%': { transform: 'translateY(-30px)' },
         },
       },
+      fontWeight: {
+        100: '100',
+        150: '150',
+        300: '300',
+        200: '200',
+        400: '400',
+        500: '500',
+        550: '550',
+      },
+      letterSpacing: {
+        1: '0.6px',
+        2: '0.2px',
+        3: '0.7px',
+      },
       animation: {
         wave: 'wave 12s linear infinite',
         updown: 'updown 2s ease-in-out infinite',
@@ -113,7 +127,7 @@ export default {
         'launchpadmain': 'clamp(32px, calc(32px + (100 - 32) * ((100vw - 360px) / (480 - 360))), 100px)',
         'launchpadmain2': 'clamp(32px, calc(32px + (140 - 32) * ((100vw - 360px) / (480 - 360))), 140px)',
         'claimcardtablemargin': 'clamp(16px, calc(16px + (45 - 16) * ((100vw - 360px) / (870 - 360))), 45px)',
-        'claimheadermargin': 'clamp(25px, calc(25px + (80 - 25) * ((100vw - 360px) / (480 - 360))), 80px)',
+        'claimheadermargin': 'clamp(25px, calc(25px + (70 - 25) * ((100vw - 360px) / (480 - 360))), 70px)',
       },
       padding: {
         'moonpadding': 'clamp(35px, calc(35px + (93 - 35) * ((100vw - 360px) / (1280 - 360))), 93px)',

@@ -71,20 +71,20 @@ export default function Header({ sidebarview }: { sidebarview: () => void }) {
 
 
     return (
-        <div className={`${jost.className} w-full h-[110px] flex sticky top-0 z-10 backdrop-filter `}>
+        <div className={`${jost.className} w-full pt-[23px] flex sticky top-0 z-10 backdrop-filter `}>
             <div className="w-[1300px] h-full m-auto flex justify-between items-center sm:px-[25px] px-[10px]">
                 <Link href={"/"}>
-                    <Image src={HeaderLogo} alt="logo" className="xs2:w-[180px] w-logowidth min-w-[120px] h-auto" />
+                    <Image src={HeaderLogo} alt="logo" className="xs2:w-auto w-logowidth min-w-[120px] h-auto" />
                 </Link>
-                <div className="w-[306px] hidden lg:flex h-[40px] px-[10px] border-[#646a6b71] border-[1px] items-center justify-around gap-6 rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c]">
+                <div className="w-[306px] hidden lg:flex h-[38px] px-[10px] border-[#646a6b71] border-[1px] items-center justify-around gap-6 rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c]">
                     <Link
                         href={"/launchpad"}
-                        className={`text-[20px] ${LaunchedPageColor()}`}>
+                        className={`text-[20px] font-light text-[#E3E3E3] ${LaunchedPageColor()}`}>
                         IDO Launchpad
                     </Link>
                     <Link
                         href={"/claims"}
-                        className={`text-[20px] ${ClaimsPageColor()}`}>
+                        className={`text-[20px] font-light text-[#E3E3E3] ${ClaimsPageColor()}`}>
                         Claims
                     </Link>
                 </div>
@@ -92,7 +92,7 @@ export default function Header({ sidebarview }: { sidebarview: () => void }) {
                 <div className="flex items-center">
 
                     <button
-                        className="xs2:w-[230px] w-walletbuttonwidth px-[15px] xs2:h-[40px] h-walletbuttonheight rounded-[10px] bg-[#27B17D] flex items-center justify-center xs2:gap-3 gap-1 mx-[5px]"
+                        className="xs2:w-[225px] w-walletbuttonwidth px-[15px] xs2:h-[38px] h-walletbuttonheight rounded-[10px] bg-[#27B17D] flex items-center justify-center xs2:gap-3 gap-1 mx-[5px]"
                         onClick={openModal}
                     >
                         <Image
@@ -100,7 +100,7 @@ export default function Header({ sidebarview }: { sidebarview: () => void }) {
                             src={Wallet}
                             className="xs2:w-[20px] w-[15px] h-auto"
                         />
-                        <span className="xs2:text-[20px] text-headerwallet font-medium">Connect Wallet</span>
+                        <span className="xs2:text-[20px] text-headerwallet text-[#E3E3E3] font-light">Connect Wallet</span>
 
                     </button>
 

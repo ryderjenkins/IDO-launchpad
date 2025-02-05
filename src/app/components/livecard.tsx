@@ -44,24 +44,24 @@ export default function LiveCard(
                             src={CardIcon}
                         />
                     </div>
-                    <h1 className="text-[20px] text-white text-center my-[15px] font-medium">{projectname}</h1>
-                    <p className="w-full text-[16px] h-[50px] overflow-hidden font-light text-white text-center block">{description}</p>
+                    <h1 className="text-[20px] text-white text-center my-[15px] font-500">{projectname}</h1>
+                    <p className="w-full text-[16px] h-[50px] overflow-hidden font-200 text-white text-center block">{description}</p>
                     <div className="w-full flex justify-between my-[32px]">
                         <div className="h-[116px] flex flex-col justify-between">
-                            <h1 className="xs:text-[16px]  font-semibold text-[#868688]">TARGETED RAISE</h1>
-                            <h1 className="xs:text-[16px]  font-semibold text-white">{target}</h1>
-                            <h1 className="xs:text-[16px]  font-semibold text-[#868688]">TOKEN PRICE</h1>
-                            <h1 className="xs:text-[16px]  font-semibold text-white">{token}</h1>
+                            <h1 className="xs:text-[16px]  font-500 text-[#868688]">TARGETED RAISE</h1>
+                            <h1 className="xs:text-[16px]  font-500 text-white">{target}</h1>
+                            <h1 className="xs:text-[16px]  font-500 text-[#868688]">TOKEN PRICE</h1>
+                            <h1 className="xs:text-[16px]  font-500 text-white">{token}</h1>
                         </div>
                         <div className="h-[116px] flex flex-col justify-between items-end">
-                            <h1 className="xs:text-[16px]  font-semibold text-[#868688]">STARTS</h1>
-                            <h1 className="xs:text-[16px]  font-semibold text-white">{startday}</h1>
-                            <h1 className="xs:text-[16px]  font-semibold text-[#868688]">ENDS</h1>
-                            <h1 className="xs:text-[16px]  font-semibold text-white">{endday}</h1>
+                            <h1 className="xs:text-[16px]  font-500 text-[#868688]">STARTS</h1>
+                            <h1 className="xs:text-[16px]  font-500 text-white">{startday}</h1>
+                            <h1 className="xs:text-[16px]  font-500 text-[#868688]">ENDS</h1>
+                            <h1 className="xs:text-[16px]  font-500 text-white">{endday}</h1>
                         </div>
                     </div>
                     <Button1
-                        name="view project"
+                        name="View project"
                         width="100%"
                         height="32px"
                     />
