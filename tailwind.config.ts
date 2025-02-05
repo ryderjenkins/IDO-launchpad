@@ -26,6 +26,7 @@ export default {
         100: '100',
         150: '150',
         300: '300',
+        350: '350',
         200: '200',
         400: '400',
         500: '500',
@@ -35,6 +36,7 @@ export default {
         1: '0.6px',
         2: '0.2px',
         3: '0.7px',
+        4: '0.5px',
       },
       animation: {
         wave: 'wave 12s linear infinite',
@@ -98,7 +100,7 @@ export default {
       },
       width: {
         'livecardWidth': 'clamp(350px, calc(350px + (395 - 350) * ((100vw - 360px) / (480 - 360))), 395px)',
-        'howworkwidth': 'clamp(80px, calc(80px + (200 - 80) * ((100vw - 360px) / (870 - 360))), 200px)',
+        'howworkwidth': 'clamp(80px, calc(80px + (178 - 80) * ((100vw - 360px) / (870 - 360))), 178px)',
         'moonwidth': 'clamp(135px, calc(135px + (346 - 135) * ((100vw - 360px) / (1280 - 360))), 346px)',
         'launchpadbuttonwidth': 'clamp(144px, calc(144px + (300 - 144) * ((100vw - 360px) / (870 - 360))), 300px)',
         'launchpadintrolwidth': 'clamp(350px, calc(350px + (622 - 350) * ((100vw - 360px) / (680 - 360))), 622px)',
