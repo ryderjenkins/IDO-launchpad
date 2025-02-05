@@ -116,7 +116,6 @@ export default {
         'claimheadermargin': 'clamp(25px, calc(25px + (80 - 25) * ((100vw - 360px) / (480 - 360))), 80px)',
       },
       padding: {
-
         'moonpadding': 'clamp(35px, calc(35px + (93 - 35) * ((100vw - 360px) / (1280 - 360))), 93px)',
       },
     },
