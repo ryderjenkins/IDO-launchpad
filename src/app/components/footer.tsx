@@ -54,7 +54,7 @@ export default function Footer() {
                             <Image
                                 alt="footer-logo"
                                 src={FooterLogo}
-                                className="w-[320px]"
+                                className="w-[320px] mt-[15px]"
                             />
                             <button
                                 className="rounded-[10px] bg-[#27B17D] my-[20px] w-full h-[35px]"

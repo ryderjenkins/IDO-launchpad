@@ -43,10 +43,10 @@ export default function intruduce() {
                 </div>
             </div>
 
-            <div className="xl:w-[670px] mx-[10px] flex flex-col items-center xl:block mt-[30px] xl:mt-0">
+            <div className="xl:w-[670px] mx-[10px] flex flex-col items-center font-normal xl:block mt-[30px] xl:mt-0">
                 <h1 className={`text-fluid xl:text-[48px] sm:leading-[48px] sm:mt-[15px] sm:mb-[20px] text-white ${jost.className}`}>FUEL YOUR DREAMS, LAUNCH</h1>
-                <h1 className={`text-fluid2 xl:text-[64px] sm:leading-[80px] text-white ${jost.className}`}><b>TO THE MOON!</b></h1>
-                <p className={`text-introdescription md:text-[20px] xl:text-left text-center text-white block font-light mb-[50px] ${jost.className}`}>Astromove identifies the best new tokens on the Aptos and Sui networks and launches them with a refund guarantee before they are listed on exchanges. Together, let’s redefine success in the Aptos and Sui ecosystems.</p>
+                <h1 className={`text-fluid2 xl:text-[64px] sm:leading-[80px] font-medium text-white ${jost.className}`}><b>TO THE MOON!</b></h1>
+                <p className={`text-introdescription md:text-[20px] xl:text-left text-center text-white block font-extralight mb-[50px] ${jost.className}`}>Astromove identifies the best new tokens on the Aptos and Sui networks and launches them with a refund guarantee before they are listed on exchanges. Together, let’s redefine success in the Aptos and Sui ecosystems.</p>
 
                 <a onClick={scrollToSection}>
                     <Button1

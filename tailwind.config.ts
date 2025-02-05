@@ -48,11 +48,11 @@ export default {
         'introdescription': 'clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / (720 - 360))), 24px)',
 
 
-        'maintitle': 'clamp(30px, calc(30px + (40 - 30) * ((100vw - 360px) / (1250 - 360))), 40px)',
+        'maintitle': 'clamp(20px, calc(20px + (40 - 20) * ((100vw - 360px) / (1250 - 360))), 40px)',
         'faqtitle': 'clamp(18px, calc(18px + (24 - 18) * ((100vw - 360px) / (967 - 360))), 24px)',
         'faqcontent': 'clamp(14px, calc(14px + (18 - 14) * ((100vw - 360px) / (967 - 360))), 18px)',
-        'howwork': 'clamp(16px, calc(16px + (26 - 16) * ((100vw - 360px) / (860 - 360))), 26px)',
-        'howworkdescription': 'clamp(14px, calc(14px + (18 - 14) * ((100vw - 360px) / (860 - 360))), 18px)',
+        'howwork': 'clamp(12px, calc(12px + (26 - 12) * ((100vw - 360px) / (860 - 360))), 26px)',
+        'howworkdescription': 'clamp(8px, calc(8px + (18 - 8) * ((100vw - 360px) / (860 - 360))), 18px)',
 
         // launchpad font
         'launchpadfluid': 'clamp(18px, calc(18px + (32 - 18) * ((100vw - 360px) / (870 - 360))), 32px)',
@@ -84,7 +84,7 @@ export default {
       },
       width: {
         'livecardWidth': 'clamp(350px, calc(350px + (395 - 350) * ((100vw - 360px) / (480 - 360))), 395px)',
-        'howworkwidth': 'clamp(150px, calc(150px + (200 - 150) * ((100vw - 360px) / (870 - 360))), 200px)',
+        'howworkwidth': 'clamp(80px, calc(80px + (200 - 80) * ((100vw - 360px) / (870 - 360))), 200px)',
         'moonwidth': 'clamp(135px, calc(135px + (346 - 135) * ((100vw - 360px) / (1280 - 360))), 346px)',
         'launchpadbuttonwidth': 'clamp(144px, calc(144px + (300 - 144) * ((100vw - 360px) / (870 - 360))), 300px)',
         'launchpadintrolwidth': 'clamp(350px, calc(350px + (622 - 350) * ((100vw - 360px) / (680 - 360))), 622px)',

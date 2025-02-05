@@ -45,54 +45,54 @@ export default function Howitworks() {
             </div>
 
             {/* hidden responsive section */}
-            <div className='py-3 w-full lg:hidden mt-[50px]'>
-                <div className='w-full flex'>
+            <div className='py-3 w-full lg:hidden mt-[50px] flex flex-col gap-[30px]'>
+                <div className='w-full flex justify-between'>
 
                     <Image
                         alt='connect wallet'
                         src={ConnectWallet}
-                        className=' lg:w-[200px] w-howworkwidth'
+                        className=' lg:w-[200px] w-howworkwidth ml-[10px]'
                     />
 
-                    <div>
+                    <div className='w-[50vw]'>
                         <h1 className='sm:text-[24px] mt-[10px] text-howwork font-medium'>CONNECT YOUR WALLET</h1>
-                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[15px]'>Connect the wallet you use on the Sui or Aptos network to the website.</p>
+                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[10px]'>Connect the wallet you use on the Sui or Aptos network to the website.</p>
                     </div>
                 </div>
-                <div className='w-full flex'>
+                <div className='w-full flex justify-between'>
                     <Image
                         alt='check balance'
                         src={CheckBalance}
-                        className=' lg:w-[200px] w-howworkwidth'
+                        className=' lg:w-[200px] min-w-[80px] w-howworkwidth ml-[10px]'
                     />
 
-                    <div>
+                    <div className='w-[50vw]'>
                         <h1 className='sm:text-[24px] mt-[10px] text-howwork font-medium'>CHECK YOUR BALANCE</h1>
-                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[15px]'>Ensure that the amount you want to purchase is available in your wallet.</p>
+                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[10px]'>Ensure that the amount you want to purchase is available in your wallet.</p>
                     </div>
                 </div>
-                <div className='w-full flex'>
+                <div className='w-full flex justify-between'>
 
                     <Image
                         alt='select the sale'
                         src={SelectSale}
-                        className=' lg:w-[200px] w-howworkwidth'
+                        className=' lg:w-[200px] min-w-[80px] w-howworkwidth ml-[10px]'
                     />
-                    <div>
+                    <div className='w-[50vw]'>
                         <h1 className='sm:text-[24px] mt-[10px] text-howwork font-medium'>SELECT THE SALE</h1>
-                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[15px]'>Select the sale you wish to join and enter your purchase amount.</p>
+                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[10px]'>Select the sale you wish to join and enter your purchase amount.</p>
                     </div>
                 </div>
 
-                <div className='w-full flex'>
+                <div className='w-full flex justify-between'>
                     <Image
                         alt='approve and participate'
                         src={Participate}
-                        className=' lg:w-[200px] w-howworkwidth'
+                        className=' lg:w-[200px] min-w-[80px] w-howworkwidth ml-[10px]'
                     />
-                    <div>
+                    <div className='w-[50vw]'>
                         <h1 className='sm:text-[24px] mt-[10px] text-howwork font-medium'>APPROVE AND PARTICIPATE</h1>
-                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[15px]'>Approve the wallet transactions to participate in the IDO.</p>
+                        <p className='sm:text-[16px] text-howworkdescription font-light mt-[10px]'>Approve the wallet transactions to participate in the IDO.</p>
                     </div>
                 </div>
             </div>
