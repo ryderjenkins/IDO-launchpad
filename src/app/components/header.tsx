@@ -53,16 +53,16 @@ export default function Header({ sidebarview }: { sidebarview: () => void }) {
 
     const LaunchedPageColor = () => {
         if (usePathname() === '/launchpad') {
-            return 'text-[#27B17D]';
+            return 'text-[#27B17D] font-medium';
         } else {
-            return 'text-white';
+            return 'text-[#E3E3E3] font-light';
         }
     }
     const ClaimsPageColor = () => {
         if (usePathname() === '/claims') {
-            return 'text-[#27B17D]';
+            return 'text-[#27B17D] font-medium';
         } else {
-            return 'text-white';
+            return 'text-[##E3E3E3] font-light';
         }
     }
 
@@ -71,20 +71,20 @@ export default function Header({ sidebarview }: { sidebarview: () => void }) {
 
 
     return (
-        <div className={`${jost.className} w-full pt-[23px] flex sticky top-0 z-10 backdrop-filter `}>
+        <div className={`${jost.className} w-full pt-[27px] flex sticky top-0 z-10 backdrop-filter `}>
             <div className="w-[1300px] h-full m-auto flex justify-between items-center sm:px-[25px] px-[10px]">
                 <Link href={"/"}>
-                    <Image src={HeaderLogo} alt="logo" className="xs2:w-auto sm:w-[178px] sm:h-[48px] w-logowidth min-w-[120px] h-auto" />
+                    <Image src={HeaderLogo} alt="logo" className="xs2:w-auto w-logowidth min-w-[120px] h-auto" />
                 </Link>
                 <div className="w-[306px] hidden lg:flex h-[38px] px-[15px] border-[#646a6b71] border-[1px] items-center justify-around gap-6 rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c]">
                     <Link
                         href={"/launchpad"}
-                        className={`text-[20px] font-light text-[#E3E3E3] ${LaunchedPageColor()}`}>
+                        className={`text-[20px] font-light ${LaunchedPageColor()}`}>
                         IDO Launchpad
                     </Link>
                     <Link
                         href={"/claims"}
-                        className={`text-[20px] font-light text-[#E3E3E3] ${ClaimsPageColor()}`}>
+                        className={`text-[20px] font-light ${ClaimsPageColor()}`}>
                         Claims
                     </Link>
                 </div>

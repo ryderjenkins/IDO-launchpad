@@ -14,7 +14,7 @@ import Watch from "../../../public/assets/icon/watch.png";
 
 
 export default function LiveCard(
-    { timeview, projectname, description, target, token, startday, endday, livestate }:
+    { timeview, projectname, description, target, token, startday, endday, livestate, socialicon }:
         {
             timeview: string,
             projectname: string,
@@ -24,6 +24,7 @@ export default function LiveCard(
             startday: string,
             endday: string,
             livestate: string,
+            socialicon: string,
         }) {
     return (
         <div
@@ -38,13 +39,13 @@ export default function LiveCard(
                     <p className="text-[#27B17D] text-[14px]">LIVE</p>
                 </div>
                 <div className="w-[350px] mx-[25px] mt-[114px] flex flex-col items-center">
-                    <div className="w-[60px] h-[60px] bg-[#27B17D] rounded-[5px]">
+                    <div className="w-[60px] h-[60px] bg-[#27B17D] rounded-[10px]">
                         <Image
                             alt="live"
                             src={CardIcon}
                         />
                     </div>
-                    <h1 className="text-[20px] text-white text-center my-[15px] font-500">{projectname}</h1>
+                    <h1 className="text-[20px] text-white text-center my-[15px] font-400">{projectname}</h1>
                     <p className="w-full text-[16px] h-[50px] overflow-hidden font-200 text-white text-center block">{description}</p>
                     <div className="w-full flex justify-between my-[32px]">
                         <div className="h-[116px] flex flex-col justify-between">
@@ -71,9 +72,9 @@ export default function LiveCard(
                         <a href="#"><Image alt="telegram" src={Telegram} /></a>
                         <a href="#"><Image alt="medium" src={Medium} /></a>
                         <a href="#"><Image alt="discord" src={Discord} /></a>
-                        <a href="#"><Image alt="instagram" src={Instagram} /></a>
-                        <a href="#"><Image alt="linkedin" src={Linkedin} /></a>
-                        <a href="#"><Image alt="github" src={Github} /></a>
+                        <a href="#" className={`${socialicon === 'true' ? 'flex' : 'hidden'}`} ><Image alt="instagram" src={Instagram} /></a>
+                        <a href="#" className={`${socialicon === 'true' ? 'flex' : 'hidden'}`} ><Image alt="linkedin" src={Linkedin} /></a>
+                        <a href="#" className={`${socialicon === 'true' ? 'flex' : 'hidden'}`} ><Image alt="github" src={Github} /></a>
                     </div>
                 </div>
                 <div

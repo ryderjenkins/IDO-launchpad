@@ -31,8 +31,8 @@ const jost = Jost({
 });
 
 import Sui from '../../../public/assets/icon/Wallet/sui.png';
-import Phantom from '../../../public/assets/icon/Wallet/phantom.png';
 import Petra from '../../../public/assets/icon/Wallet/petra.png';
+import Phantom from '../../../public/assets/icon/Wallet/phantom.png';
 import More from '../../../public/assets/icon/Wallet/more.png';
 
 interface DataItem {
@@ -50,16 +50,16 @@ const data: DataItem[] = [
         walletname: 'Sui Wallet',
     },
     {
-        icondisplay: Phantom,
-        counterdisplay: 'none',
-        addview: 'block',
-        walletname: 'Phantom Wallet',
-    },
-    {
         icondisplay: Petra,
         counterdisplay: 'none',
-        addview: 'none',
+        addview: 'block',
         walletname: 'Petra Wallet',
+    },
+    {
+        icondisplay: Phantom,
+        counterdisplay: 'none',
+        addview: 'none',
+        walletname: 'Phantom Wallet',
     },
     {
         icondisplay: More,
@@ -117,6 +117,14 @@ const Wallet: MoreWalletItem[] = [
         walletname: 'ABC Wallet',
     },
     {
+        walletitems: Defy,
+        walletname: 'Defy',
+    },
+    {
+        walletitems: Pontem,
+        walletname: 'Pontem Wallet',
+    },
+    {
         walletitems: Infinty,
         walletname: 'Infinty Wallet',
     },
@@ -127,6 +135,14 @@ const Wallet: MoreWalletItem[] = [
     {
         walletitems: Gem,
         walletname: 'Gem Wallet',
+    },
+    {
+        walletitems: Nightly,
+        walletname: 'Nightly',
+    },
+    {
+        walletitems: OKX,
+        walletname: 'OKX Wallet',
     },
     {
         walletitems: Fewcha,
@@ -141,6 +157,14 @@ const Wallet: MoreWalletItem[] = [
         walletname: 'Shadow Wallet',
     },
     {
+        walletitems: Turnkey,
+        walletname: 'Turnkey'
+    },
+    {
+        walletitems: Token,
+        walletname: 'TokenPocket',
+    },
+    {
         walletitems: Arculus,
         walletname: 'Arculus Wallet',
     },
@@ -153,6 +177,14 @@ const Wallet: MoreWalletItem[] = [
         walletname: 'Flipper',
     },
     {
+        walletname: 'Bitget Wallet',
+        walletitems: Biget,
+    },
+    {
+        walletname: 'Math Wallet',
+        walletitems: Math,
+    },
+    {
         walletitems: Trust,
         walletname: 'Trust Wallet',
     },
@@ -163,38 +195,6 @@ const Wallet: MoreWalletItem[] = [
     {
         walletitems: Surf,
         walletname: 'Surf Wallet',
-    },
-    {
-        walletitems: Defy,
-        walletname: 'Defy',
-    },
-    {
-        walletitems: Pontem,
-        walletname: 'Pontem Wallet',
-    },
-    {
-        walletitems: Nightly,
-        walletname: 'Nightly Wallet',
-    },
-    {
-        walletitems: OKX,
-        walletname: 'OKX Wallet',
-    },
-    {
-        walletitems: Turnkey,
-        walletname: 'Turnkey'
-    },
-    {
-        walletitems: Token,
-        walletname: 'TokenPocket',
-    },
-    {
-        walletname: 'Bitget',
-        walletitems: Biget,
-    },
-    {
-        walletname: 'Math Wallet',
-        walletitems: Math,
     },
     {
         walletname: 'Suiet',
@@ -234,16 +234,16 @@ export default function WalletModal(
                 aria-describedby="parent-modal-description"
                 className='backdrop-blur-sm'
             >
-                <Box sx={{ ...style, width: 360 }}>
+                <Box sx={{ ...style, width: 324, padding: '18px 23px' }}>
                     <div className={` ${viewhandle ? 'block' : 'hidden'}`}>
-                        <div className={`flex justify-between items-center pb-[20px] border-b-[1px] border-b-[#6e6e6e]`}>
+                        <div className={`flex justify-between items-center pb-[18px] border-b-[1px] border-b-[#6e6e6e]`}>
                             <a href="">
                                 <Image
                                     alt='help'
                                     src={Help}
                                 />
                             </a>
-                            <h1 className={`text-[20px] font-medium ${jost.className}`}>Connect Wallet</h1>
+                            <h1 className={`text-[16px] font-medium ${jost.className}`}>Connect Wallet</h1>
                             <a
                                 className='cursor-pointer block w-[15px] h-[10px]'
                                 onClick={onClose}
@@ -254,7 +254,7 @@ export default function WalletModal(
                                 />
                             </a>
                         </div>
-                        <div className='flex flex-col mt-[30px] gap-[15px]'>
+                        <div className='flex flex-col mt-[16px] gap-[16px]'>
                             {data.map((item, index) => (
                                 <WalletItem
                                     key={index}
@@ -280,7 +280,7 @@ export default function WalletModal(
                                     src={Back}
                                 />
                             </div>
-                            <h1 className={`text-[20px] font-medium ${jost.className}`}>All Wallet</h1>
+                            <h1 className={`text-[16px] font-medium ${jost.className}`}>All Wallet</h1>
                             <a
                                 className='cursor-pointer block w-[15px] h-[10px]'
                                 onClick={onClose}
@@ -291,8 +291,8 @@ export default function WalletModal(
                                 />
                             </a>
                         </div>
-                        <input type="text" placeholder='Search Wallet' className='w-full h-[40px] mt-[20px] rounded-[10px] px-[10px] text-[15px] font-medium text-white bg-black  focus:outline-none focus:ring-1 focus:ring-[#27B17D]' />
-                        <div className='flex flex-wrap mt-[20px] gap-1'>
+                        <input type="text" placeholder='Search Wallet' className='w-full h-[24px] mt-[20px] rounded-[10px] px-[10px] text-[12px] font-medium text-white bg-black  focus:outline-none focus:ring-1 focus:ring-[#27B17D]' />
+                        <div className='flex flex-wrap mt-[16px] gap-[6px]'>
                             {Wallet.map((item, index) => (
                                 <WalletItemSquare
                                     key={index}
