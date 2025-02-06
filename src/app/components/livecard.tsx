@@ -62,7 +62,7 @@ export default function LiveCard(
                         </div>
                     </div>
                     <Button1
-                        name="View project"
+                        name="View Project"
                         width="100%"
                         height="32px"
                     />
