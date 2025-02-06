@@ -34,7 +34,7 @@ export default function WalletItem({ icondisplay, counterdisplay, addview, walle
                 alt='add'
                 src={Add}
             />
-            <h1 className='text-[12px] font-medium text-[#45504E]' style={{ display: counterdisplay }}>+25</h1>
+            <h1 className='text-[12px] font-medium text-[#45504E]' style={{ display: counterdisplay }}></h1>
         </button>
     )
 }
