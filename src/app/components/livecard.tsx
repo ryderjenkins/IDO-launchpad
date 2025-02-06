@@ -30,7 +30,7 @@ export default function LiveCard(
         <div
             className="xs:w-[395px] h-[607px] w-livecardWidth box-border border-[1px] border-[#27B17D] rounded-[10px] relative">
             <div className="flex flex-col h-full">
-                <div className="w-full h-[144px] bg-cover rounded-t-[10px]" style={{ backgroundImage: "url(assets/back/card.png)" }}></div>
+                <div className="w-full h-[160px] bg-cover rounded-t-[10px]" style={{ backgroundImage: "url(assets/back/card.png)" }}></div>
                 <div className="w-full h-[462px] bg-[#030409] rounded-b-[10px] bg-no-repeat bg-bottom backdrop-blur-md" style={{ backgroundImage: "url(assets/category/white_astromove.png)" }}></div>
             </div>
 
@@ -38,7 +38,7 @@ export default function LiveCard(
                 <div className="w-[62px] h-[24px] border-[1px] border-[#27B17D] rounded-[5px] flex items-center justify-center top-[15px] left-[15px] absolute" style={{ display: livestate }}>
                     <p className="text-[#27B17D] text-[14px]">LIVE</p>
                 </div>
-                <div className="w-[350px] mx-[25px] mt-[114px] flex flex-col items-center">
+                <div className="w-[350px] mx-[25px] mt-[125px] flex flex-col items-center">
                     <div className="w-[60px] h-[60px] bg-[#27B17D] rounded-[10px]">
                         <Image
                             alt="live"
