@@ -47,7 +47,7 @@ export default function LiveCard(
                     </div>
                     <h1 className="text-[20px] text-white text-center my-[15px] font-400">{projectname}</h1>
                     <p className="w-full text-[16px] h-[50px] overflow-hidden font-200 text-white text-center block">{description}</p>
-                    <div className="w-full flex justify-between my-[32px]">
+                    <div className="w-full flex justify-between my-[20px]">
                         <div className="h-[116px] flex flex-col justify-between">
                             <h1 className="xs:text-[16px]  font-500 text-[#868688]">TARGETED RAISE</h1>
                             <h1 className="xs:text-[16px]  font-500 text-white">{target}</h1>
