@@ -50,10 +50,11 @@ export default {
         sans: ['var(--font-inter)'],
         jost: ['var(--font-jost)'],
       },
+
       backgroundImage: {
-        'home': "url('/assets/back/universe.png')",
+        'home': "url('/assets/back/main.gif')",
         'launchpad': "url('/assets/back/LaunchBack.png')",
-        'default': "url('/assets/back/universe.png')",
+        'default': "url('/assets/back/main.gif')",
       },
       fontSize: {
         'fluid': 'clamp(24px, calc(24px + (48 - 24) * ((100vw - 360px) / (1280 - 360))), 48px)',
@@ -96,6 +97,7 @@ export default {
         'xl': '1280px',
         '2xl': '1250px',
         '3xl': '1415px',
+        '3xl2': '1440px',
         '4xl': '1300px',
       },
       width: {

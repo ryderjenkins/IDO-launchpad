@@ -3,7 +3,8 @@ import Button1 from '../../components/button1';
 import Image from 'next/image';
 import aptos from "../../../../public/assets/category/aptos.png";
 import katman from "../../../../public/assets/category/katma.png";
-import astromove from "../../../../public/assets/category/astromove.png";
+import astromove from "../../../../public/assets/back/mainlogo.gif";
+import Mobilelogo from "../../../../public/assets/category/astromove.png";
 import { Jost } from 'next/font/google';
 
 const jost = Jost({
@@ -35,8 +36,7 @@ export default function intruduce() {
                     <div className="xl:w-[346px] w-moonwidth h-moonheight xl:h-[346px] bg-no-repeat bg-cover flex items-center justify-center" style={{ backgroundImage: "url(assets/category/moon.png)" }}>
                         <Image
                             alt='astromove'
-                            src={astromove}
-                            className='animate-updown'
+                            src={Mobilelogo}
                             style={{ width: '60%', height: '60%' }}
                         />
                     </div>
@@ -69,14 +69,11 @@ export default function intruduce() {
                     />
                 </div>
             </div>
-            <div className='hidden xl:flex items-center justify-center w-[532px] h-[532px] rounded-[10px] border-1 border-[#27B17D]'>
-                <div className="w-[346px] h-[346px] bg-no-repeat bg-cover flex items-center justify-center" style={{ backgroundImage: "url(assets/category/moon.png)" }}>
-                    <Image
-                        alt='astromove'
-                        src={astromove}
-                        className='animate-updown'
-                    />
-                </div>
+            <div className='hidden xl:flex items-center justify-center w-[532px] h-[532px] rounded-[10px]'>
+                <Image
+                    alt='astromove'
+                    src={astromove}
+                />
             </div>
         </div>
     )
