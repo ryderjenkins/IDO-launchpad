@@ -103,7 +103,7 @@ export default {
       width: {
         'livecardWidth': 'clamp(350px, calc(350px + (395 - 350) * ((100vw - 360px) / (480 - 360))), 395px)',
         'howworkwidth': 'clamp(80px, calc(80px + (178 - 80) * ((100vw - 360px) / (870 - 360))), 178px)',
-        'moonwidth': 'clamp(135px, calc(135px + (532 - 135) * ((100vw - 360px) / (1280 - 360))), 532px)',
+        'moonwidth': 'clamp(204px, calc(204px + (532 - 204) * ((100vw - 390px) / (1280 - 390))), 532px)',
         'launchpadbuttonwidth': 'clamp(144px, calc(144px + (300 - 144) * ((100vw - 360px) / (870 - 360))), 300px)',
         'launchpadintrolwidth': 'clamp(350px, calc(350px + (622 - 350) * ((100vw - 360px) / (680 - 360))), 622px)',
         'launchpadviewbutton': 'clamp(120px, calc(120px + (160 - 120) * ((100vw - 360px) / (680- 360))), 160px)',
@@ -117,7 +117,7 @@ export default {
       },
       height: {
         'livecardcontent': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (480 - 360))), 20px)',
-        'moonheight': 'clamp(135px, calc(135px + (532 - 135) * ((100vw - 360px) / (1280 - 360))), 532px)',
+        'moonheight': 'clamp(204px, calc(204px + (532 - 204) * ((100vw - 390px) / (1280 - 390))), 532px)',
         'launchpadbuttonheight': 'clamp(25px, calc(25px + (50 - 25) * ((100vw - 360px) / (870 - 360))), 50px)',
         'launchpadheight': 'clamp(330px, calc(330px + (357 - 330) * ((100vw - 360px) / (480 - 360))), 357px)',
         'launchpadtable': 'clamp(30px, calc(30px + (50 - 30) * ((100vw - 360px) / (680 - 360))), 50px)',
