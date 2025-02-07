@@ -27,24 +27,24 @@ export default function Footer() {
                         />
                         <h1 className="mt-[52px] text-[14px] font-light">Copyright Astromove 2025</h1>
                     </div>
-                    <div className="w-[260px] sm:block hidden">
+                    <div className="w-[257px] sm:block hidden">
                         <button
                             className="rounded-[10px] bg-[#27B17D] mt-[45px] w-full h-[35px]"
                         >
                             <span className={`text-[16px] font-medium ${jost.className}`}>Join the Community</span>
                         </button>
-                        <div className="flex mt-[36px] mb-[45px] w-full justify-between">
+                        <div className="flex mt-[36px] mb-[45px] w-full justify-between px-[5px]">
                             <a href="#"> <Image alt="twitter" src={FooterTwitter} /> </a>
                             <a href="#"> <Image alt="telegram" src={FooterTelegram} /> </a>
                             <a href="#"> <Image alt="discord" src={FooterDiscord} /> </a>
                             <a href="#"> <Image alt="medium" src={FooterMedium} /> </a>
                         </div>
-                        <div className="flex w-full justify-between">
+                        <div className="flex w-full justify-between px-[4px]">
                             <a href="#">
-                                <h1 className="text-[16px] font-400">Terms and Conditions</h1>
+                                <h1 className="text-[16px] font-400 tracking-1">Terms and Conditions</h1>
                             </a>
                             <a href="#">
-                                <h1 className="text-[16px] font-400">Docs</h1>
+                                <h1 className="text-[16px] font-400 tracking-1">Docs</h1>
                             </a>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ export default function Footer() {
                             <h1 className="xs:text-[14px] text-[10px] font-light">Copyright Astromove 2025</h1>
                             <div className="flex xs:w-[200px] w-[160px] justify-between">
                                 <a href="#">
-                                    <h1 className="xs:text-[16px] text-[12px] font-400">Terms and Conditions</h1>
+                                    <h1 className="xs:text-[16px] text-[12px] font-light">Terms and Conditions</h1>
                                 </a>
                                 <a href="#">
                                     <h1 className="xs:text-[16px] text-[12px] font-400">Docs</h1>
