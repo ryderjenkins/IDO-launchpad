@@ -1,4 +1,6 @@
+'use client'
 export default function Loading() {
+    console.log('Loading...')
     return (
         <div className="absolute left-0 top-0 items-center justify-center h-screen z-[100] w-full bg-black">
             <div className="w-full h-full flex justify-center items-center">

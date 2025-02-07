@@ -61,7 +61,7 @@ export default function intruduce() {
                     <a href="https://sui.io" target='blank'><Image alt={"katman"} src={katman} /></a>
                 </div>
             </div>
-            <div className='hidden xl:flex items-center justify-center w-[532px] h-[532px]'>
+            <div className='hidden xl:flex items-center justify-center w-[558px] h-[558px]'>
                 <Image
                     alt='astromove'
                     src={astromove}
