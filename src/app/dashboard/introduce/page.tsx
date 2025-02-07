@@ -4,7 +4,6 @@ import Image from 'next/image';
 import aptos from "../../../../public/assets/category/aptos.png";
 import katman from "../../../../public/assets/category/katma.png";
 import astromove from "../../../../public/assets/back/mainlogo.gif";
-import Mobilelogo from "../../../../public/assets/category/astromove.png";
 import { Jost } from 'next/font/google';
 
 const jost = Jost({
@@ -32,14 +31,13 @@ export default function intruduce() {
     return (
         <div className="w-full m-auto xl:mt-[110px] mt-[30px] xl:flex justify-between">
             <div className='w-full flex justify-center xl:hidden '>
-                <div className='flex items-center justify-center xl:w-[532px] xl:p-[93px] p-moonpadding rounded-[10px] border-1 border-[#27B17D]'>
-                    <div className="xl:w-[346px] w-moonwidth h-moonheight xl:h-[346px] bg-no-repeat bg-cover flex items-center justify-center" style={{ backgroundImage: "url(assets/category/moon.png)" }}>
-                        <Image
-                            alt='astromove'
-                            src={Mobilelogo}
-                            style={{ width: '60%', height: '60%' }}
-                        />
-                    </div>
+
+                <div className="xl:w-[532px] w-moonwidth h-moonheight xl:h-[532px] flex items-center justify-center">
+                    <Image
+                        alt='astromove'
+                        src={astromove}
+                    />
+
                 </div>
             </div>
 
@@ -58,18 +56,12 @@ export default function intruduce() {
                 <p className={`block my-[15px] text-[#E3E3E3] text-fluid3 md:text-[20px] font-200 ${jost.className}`}>
                     Supported Blockchains:
                 </p>
-                <div className='px-[36px] flex gap-[36px]'>
-                    <Image
-                        alt={"aptos"}
-                        src={aptos}
-                    />
-                    <Image
-                        alt={"katman"}
-                        src={katman}
-                    />
+                <div className='px-[30px] flex gap-[36px]'>
+                    <a href="https://aptosfoundation.org/" target='blank'><Image alt={"aptos"} src={aptos} /></a>
+                    <a href="https://sui.io" target='blank'><Image alt={"katman"} src={katman} /></a>
                 </div>
             </div>
-            <div className='hidden xl:flex items-center justify-center w-[532px] h-[532px] rounded-[10px]'>
+            <div className='hidden xl:flex items-center justify-center w-[532px] h-[532px]'>
                 <Image
                     alt='astromove'
                     src={astromove}
