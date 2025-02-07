@@ -56,9 +56,9 @@ export default function RootLayout({
 
 
         <div className="bg-[#030409] h-[100vh] w-[100vw] fixed left-0 top-0 z-[-10]">
-          <div className={`mix-blend-screen bg-center opacity-35 absolute inset-0 bg-no-repeat bg-home ${pathhandle ? 'block' : 'hidden'}`} style={{ backgroundSize: '1440px 100%', backgroundPosition: 'center center' }}></div>
+          <div className={`mix-blend-screen bg-center opacity-35 absolute inset-0 bg-no-repeat bg-home ${pathhandle ? 'block' : 'hidden'}`} style={{ backgroundSize: '1440px 953px', backgroundPosition: 'center top' }}></div>
           <div className={`mix-blend-soft-light bg-[#2e9778] h-full w-full inset-32 ${pathhandle ? 'block' : 'hidden'}`}></div>
-          <div className={`bg-launchpad bg-no-repeat h-full w-full ${pathhandle ? 'hidden' : 'block'}`} style={{ backgroundSize: '1440px 100%', backgroundPosition: 'center center' }}></div>
+          <div className={`bg-launchpad bg-no-repeat h-full w-full bg-cover ${pathhandle ? 'hidden' : 'block'}`} style={{ backgroundSize: '1440px 953px', backgroundPosition: 'center top' }}></div>
         </div>
 
 
