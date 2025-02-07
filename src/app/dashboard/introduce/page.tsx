@@ -56,7 +56,7 @@ export default function intruduce() {
                 <p className={`block my-[15px] text-[#E3E3E3] text-fluid3 md:text-[20px] font-200 ${jost.className}`}>
                     Supported Blockchains:
                 </p>
-                <div className='px-[30px] flex gap-[36px]'>
+                <div className='px-[25px] flex gap-[36px]'>
                     <a href="https://aptosfoundation.org/" target='blank'><Image alt={"aptos"} src={aptos} /></a>
                     <a href="https://sui.io" target='blank'><Image alt={"katman"} src={katman} /></a>
                 </div>

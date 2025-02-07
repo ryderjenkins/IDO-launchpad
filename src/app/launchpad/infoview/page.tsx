@@ -98,7 +98,7 @@ export default function InfoView() {
                                     <th className="min-w-48"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">PROJECTS</h1></th>
                                     <th className="min-w-10"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">Now</h1></th>
                                     <th className="min-w-10"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">IDO</h1></th>
-                                    <th className="min-w-10"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">Ah1</h1></th>
+                                    <th className="min-w-10"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">ATH</h1></th>
                                     <th className="min-w-20"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">When</h1></th>
                                     <th className="min-w-15"><h1 className="sm:text-[20px] text-launchpadtablehead text-left font-medium">Raise</h1></th>
                                     <th></th>

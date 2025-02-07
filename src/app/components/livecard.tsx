@@ -67,14 +67,14 @@ export default function LiveCard(
                         height="32px"
                     />
                     <div className="w-full flex mt-[25px] gap-4 justify-center">
-                        <a href="#"><Image alt="earth" src={Earth} /></a>
-                        <a href="#"><Image alt="x" src={X} /></a>
-                        <a href="#"><Image alt="telegram" src={Telegram} /></a>
-                        <a href="#"><Image alt="medium" src={Medium} /></a>
-                        <a href="#"><Image alt="discord" src={Discord} /></a>
-                        <a href="#" className={`${socialicon === 'true' ? 'flex' : 'hidden'}`} ><Image alt="instagram" src={Instagram} /></a>
-                        <a href="#" className={`${socialicon === 'true' ? 'flex' : 'hidden'}`} ><Image alt="linkedin" src={Linkedin} /></a>
-                        <a href="#" className={`${socialicon === 'true' ? 'flex' : 'hidden'}`} ><Image alt="github" src={Github} /></a>
+                        <a href="#"><Image className="w-[20px] h-[20px]" alt="earth" src={Earth} /></a>
+                        <a href="#"><Image className="w-[20px] h-[20px]" alt="x" src={X} /></a>
+                        <a href="#"><Image className="w-[23.5px] h-[20px]" alt="telegram" src={Telegram} /></a>
+                        <a href="#"><Image className="w-[25px] h-[20px]" alt="medium" src={Medium} /></a>
+                        <a href="#"><Image className="w-[26px] h-[20px]" alt="discord" src={Discord} /></a>
+                        <a href="#" className={`${socialicon === 'true' ? 'flex' : 'hidden'}`} ><Image className="w-[20px] h-[20px]" alt="instagram" src={Instagram} /></a>
+                        <a href="#" className={`${socialicon === 'true' ? 'flex' : 'hidden'}`} ><Image className="w-[20px] h-[20px]" alt="linkedin" src={Linkedin} /></a>
+                        <a href="#" className={`${socialicon === 'true' ? 'flex' : 'hidden'}`} ><Image className="w-[20px] h-[20px]" alt="github" src={Github} /></a>
                     </div>
                 </div>
                 <div
