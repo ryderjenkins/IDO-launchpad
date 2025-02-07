@@ -63,7 +63,10 @@ export default function InfoView() {
                         <span className={`text-[#93949A] sm:text-[16px] text-launchpadbtntext ${!select ? 'text-white' : ''}`}>Completed</span>
                     </button>
                 </div>
-                <input type="text" placeholder="Search" className="w-[387px] h-[30px] sm:text-[24px] text-launchpadsearch bg-transparent lg:block hidden border-b-[1px] border-[#949393] py-1 transition duration-300 ease outline-none focus:border-[#27B17D] hover:border-slate-300 shadow-sm focus:shadow" />
+                <input
+                    type="text"
+                    placeholder="Search"
+                    className="w-[387px] h-[30px] placeholder-[#4F4F4F] sm:text-[24px] text-launchpadsearch bg-transparent lg:block hidden border-b-[1px] border-[#4F4F4F] py-1 transition duration-300 ease outline-none focus:border-[#27B17D] hover:border-slate-300 shadow-sm focus:shadow" />
             </div>
 
             {select ?

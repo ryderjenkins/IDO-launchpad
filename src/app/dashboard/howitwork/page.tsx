@@ -22,7 +22,7 @@ export default function Howitworks() {
                 <Image
                     alt='howitworks'
                     src={IDOS}
-                    className='w-[95%]'
+                    className='w-[100%] ml-[-25px]'
                 />
                 <div className='w-full grid-cols-4 gap-5 grid'>
                     <div>

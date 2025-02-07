@@ -50,7 +50,7 @@ export default function Footer() {
                     </div>
 
                     <div className="sm:hidden w-full flex flex-col items-center">
-                        <div className="sm:w-[260px] w-footerlogo">
+                        <div className="sm:w-[257px] w-footerlogo">
                             <Image
                                 alt="footer-logo"
                                 src={FooterLogo}
