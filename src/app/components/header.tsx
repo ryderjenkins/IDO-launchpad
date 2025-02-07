@@ -74,7 +74,7 @@ export default function Header({ sidebarview }: { sidebarview: () => void }) {
         <div className={`${jost.className} w-full pt-[27px] flex sticky top-0 z-10 backdrop-filter `}>
             <div className="w-[1300px] h-full m-auto flex justify-between items-center sm:px-[25px] px-[10px]">
                 <Link href={"/"}>
-                    <Image src={HeaderLogo} alt="logo" className="xs2:w-auto w-logowidth min-w-[120px] h-auto" />
+                    <Image src={HeaderLogo} alt="logo" className="xs2:w-[200px] w-logowidth min-w-[120px] h-auto" />
                 </Link>
                 <div className="w-[306px] hidden lg:flex h-[38px] px-[15px] border-[#646a6b71] border-[1px] items-center justify-around gap-6 rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c]">
                     <Link
