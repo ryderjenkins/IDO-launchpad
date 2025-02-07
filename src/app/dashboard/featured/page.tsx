@@ -27,7 +27,7 @@ export default function Featured() {
     };
 
     return (
-        <div className={`w-full m-auto xl:mt-[115px] mt-mainmargin ${jost.className} `}>
+        <div className={`w-full m-auto xl:mt-[150px] mt-mainmargin ${jost.className} `}>
             <h1 className='text-white 2xl:text-[40px] text-maintitle text-center lg2:text-left font-bold mb-[35px]'>FEATURED PROJECTS</h1>
             <div className="w-full mt-[80px]">
 
