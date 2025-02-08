@@ -16,7 +16,7 @@ const jost = Jost({
 
 export default function Howitworks() {
     return (
-        <section className={`w-full pt-[120px] ${jost.className}`} id='howitworks'>
+        <section className={`w-full pt-[140px] ${jost.className}`} id='howitworks'>
             <h1 className='2xl:text-[40px] text-maintitle text-center lg2:text-left font-bold text-white'>HOW TO PARTICIPATE IN IDOS?</h1>
             <div className='hidden lg:block  mt-[-50px]'>
                 <Image

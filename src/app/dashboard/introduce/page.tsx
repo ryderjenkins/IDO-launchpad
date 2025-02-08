@@ -19,7 +19,7 @@ export default function intruduce() {
         event.preventDefault();
         const section = document.getElementById('howitworks');
         if (section) {
-            const topPosition = section.getBoundingClientRect().top + window.scrollY + 20;
+            const topPosition = section.getBoundingClientRect().top + window.scrollY;
 
             window.scrollTo({
                 top: topPosition,

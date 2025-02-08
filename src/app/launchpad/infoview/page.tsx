@@ -83,7 +83,6 @@ export default function InfoView() {
                                     startday={item.startday}
                                     endday={item.endday}
                                     livestate={item.livestate}
-                                    socialicon={item.socialicon}
                                 />
                             </div>
                         ))}
