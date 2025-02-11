@@ -1,13 +1,14 @@
 'use client'
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Button1 from "./button1";
 import CardIcon from "../../../public/assets/category/icon.png";
 import Earth from "../../../public/assets/icon/earth.png";
 import Telegram from "../../../public/assets/icon/telegram.png";
 import X from "../../../public/assets/icon/x.png";
 import Discord from "../../../public/assets/icon/discord.png";
-import Instagram from "../../../public/assets/icon/instagram.png";
 import Watch from "../../../public/assets/icon/watch.png";
+import Doc from "../../../public/assets/icon/doc.png";
 
 
 export default function LiveCard(
@@ -23,6 +24,9 @@ export default function LiveCard(
             livestate: string,
 
         }) {
+
+    const router = useRouter();
+
     return (
         <div
             className="xs:w-[395px] h-[607px] w-livecardWidth box-border border-[1px] border-[#27B17D] rounded-[10px] relative">
@@ -64,11 +68,11 @@ export default function LiveCard(
                         height="32px"
                     />
                     <div className="w-full flex mt-[25px] gap-4 justify-center">
-                        <a href="#"><Image className="w-[20px] h-[20px]" alt="earth" src={Earth} /></a>
-                        <a href="#"><Image className="w-[20px] h-[20px]" alt="x" src={X} /></a>
-                        <a href="#"><Image className="w-[23.5px] h-[20px]" alt="telegram" src={Telegram} /></a>
-                        <a href="#"><Image className="w-[26px] h-[20px]" alt="discord" src={Discord} /></a>
-                        <a href="#"><Image className="w-[20px] h-[20px]" alt="instagram" src={Instagram} /></a>
+                        <a><Image className="w-[20px] h-[20px]" alt="earth" src={Earth} /></a>
+                        <a><Image className="w-[20px] h-[20px]" alt="x" src={X} /></a>
+                        <a><Image className="w-[23.5px] h-[20px]" alt="telegram" src={Telegram} /></a>
+                        <a><Image className="w-[26px] h-[20px]" alt="discord" src={Discord} /></a>
+                        <a><Image className="w-[16px] h-[20px]" onClick={() => router.push('/doc')} alt="doc" src={Doc} /></a>
 
                     </div>
                 </div>

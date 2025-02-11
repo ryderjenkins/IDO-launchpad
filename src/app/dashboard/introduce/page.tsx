@@ -4,6 +4,7 @@ import Image from 'next/image';
 import aptos from "../../../../public/assets/category/aptos.png";
 import katman from "../../../../public/assets/category/katma.png";
 import astromove from "../../../../public/assets/back/mainlogo.gif";
+// import logMedia from '@/app/dashboard/introduce/mainlogo.webm';
 import { Jost } from 'next/font/google';
 
 const jost = Jost({

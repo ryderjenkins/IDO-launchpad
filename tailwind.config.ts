@@ -119,7 +119,7 @@ export default {
         'livecardcontent': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (480 - 360))), 20px)',
         'moonheight': 'clamp(204px, calc(204px + (532 - 204) * ((100vw - 390px) / (1280 - 390))), 532px)',
         'launchpadbuttonheight': 'clamp(25px, calc(25px + (50 - 25) * ((100vw - 360px) / (870 - 360))), 50px)',
-        'launchpadheight': 'clamp(330px, calc(330px + (357 - 330) * ((100vw - 360px) / (480 - 360))), 357px)',
+        // 'launchpadheight': 'clamp(330px, calc(330px + (357 - 330) * ((100vw - 360px) / (480 - 360))), 322px)',
         'launchpadtable': 'clamp(30px, calc(30px + (50 - 30) * ((100vw - 360px) / (680 - 360))), 50px)',
         'claimcardheight': 'clamp(30px, calc(30px + (50 - 30) * ((100vw - 360px) / (870 - 360))), 50px)',
         'walletbuttonheight': 'clamp(25px, calc(25px + (40 - 25) * ((100vw - 360px) / (520 - 360))), 40px)',

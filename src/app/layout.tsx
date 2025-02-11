@@ -36,6 +36,8 @@ export default function RootLayout({
       setPathhandle(true);
     } else if (current === '/launchpad') {
       setPathhandle(false);
+    } else if (current === '/doc') {
+      setPathhandle(false);
     }
     else {
       setPathhandle(true);
@@ -54,19 +56,20 @@ export default function RootLayout({
           sidebarview={handleSidebar}
         />
 
-
-        <div className="bg-[#030409] h-[100vh] w-[100vw] fixed left-0 top-0 z-[-10]">
-          <div className={`mix-blend-screen bg-center opacity-35 absolute inset-0 bg-no-repeat bg-home ${pathhandle ? 'block' : 'hidden'}`} style={{ backgroundSize: '1440px 953px', backgroundPosition: 'center top' }}></div>
-          <div className={`mix-blend-soft-light bg-[#2e9778] h-full w-full inset-32 ${pathhandle ? 'block' : 'hidden'}`}></div>
-          <div className={`bg-launchpad bg-no-repeat h-full w-full bg-cover ${pathhandle ? 'hidden' : 'block'}`} style={{ backgroundSize: '1440px 953px', backgroundPosition: 'center top' }}></div>
+        {/* background handle */}
+        <div className="bg-[#030409] h-[953px] w-full absolute left-0 top-0 z-[-20]">
+          <div className={`mix-blend-screen bg-center opacity-35 absolute inset-0 bg-no-repeat bg-home ${pathhandle ? 'block' : 'hidden'}`} style={{ backgroundSize: '1440px 100vh', backgroundPosition: 'center top' }}></div>
+          <div className={`mix-blend-soft-light bg-[#126e53] h-[100vh] w-[1440px] mx-auto inset-32 ${pathhandle ? 'block' : 'hidden'}`}></div>
+          <div className={`bg-launchpad bg-no-repeat h-full w-full bg-cover ${pathhandle ? 'hidden' : 'block'}`} style={{ backgroundSize: '1440px 100vh', backgroundPosition: 'center top' }}></div>
         </div>
+        <div className="w-[100vw] h-[100vh] fixed left-0 top-0 z-[-30] bg-[#030409]"></div>
 
-
-
-        <div className="z-50">
-          {children}
+        <div className="">
+          <div className="z-50">
+            {children}
+          </div>
+          <Footer />
         </div>
-        <Footer />
         <ToTopButton />
         <SideBar
           viewstate={sidebar}

@@ -8,8 +8,6 @@ import React, { useState } from 'react';
 import WalletModal from "./WalletModal";
 import { usePathname } from "next/navigation";
 
-
-
 import { Jost } from 'next/font/google';
 
 const jost = Jost({

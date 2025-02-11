@@ -48,3 +48,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
 }
+
+a {
+  cursor: pointer;
+}
