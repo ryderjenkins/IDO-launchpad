@@ -25,7 +25,7 @@ export default function RootLayout({
   //       return 'true';
   //   }
   // };
-  const [pathhandle, setPathhandle] = useState(true);
+  const [pathhandle, setPathhandle] = useState(false);
 
   useEffect(() => {
     handlePath();

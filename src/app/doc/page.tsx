@@ -2,13 +2,49 @@ import { Jost } from 'next/font/google';
 import DocIntroCard from '../components/DocIntroCard';
 import DocIntroTitle from '../components/DocIntrotitle';
 import DocIntroHeader from '../components/DocIntroHeader';
+import DocSocialButton from '../components/DocSocialButton';
+
+import { StaticImageData } from 'next/image';
+import Descord from '../../../public/assets/icon/DocSocialButtonIcon/descord.png';
+import Telegram from '../../../public/assets/icon/DocSocialButtonIcon/telegram.png';
+import X from '../../../public/assets/icon/DocSocialButtonIcon/x.png';
+import DocIcon from '../../../public/assets/icon/DocSocialButtonIcon/doc.png';
+import Site from '../../../public/assets/icon/DocSocialButtonIcon/site.png';
+
 
 const jost = Jost({
     subsets: ['latin'],
     display: 'swap',
     variable: '--font-jost',
-
 });
+
+interface buttonData {
+    buttonlog: StaticImageData,
+    buttonName: string
+}
+
+const SocialButtonData: buttonData[] = [
+    {
+        buttonlog: Site,
+        buttonName: 'WebSite'
+    },
+    {
+        buttonlog: X,
+        buttonName: 'X'
+    },
+    {
+        buttonlog: Telegram,
+        buttonName: 'Telegram'
+    },
+    {
+        buttonlog: Descord,
+        buttonName: 'Discord'
+    },
+    {
+        buttonlog: DocIcon,
+        buttonName: 'Docs'
+    },
+]
 
 export default function Docs() {
     return (
@@ -72,10 +108,12 @@ export default function Docs() {
                     height='1250px'
                     selectIcon={false}
                 />
-                <DocIntroTitle
-                    margintop='72px'
-                    title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
-                />
+                <i>
+                    <DocIntroTitle
+                        margintop='72px'
+                        title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
+                    />
+                </i>
                 <hr className='w-full border-[#838383] mt-[71px]' />
                 <DocIntroHeader
                     margintop='71px'
@@ -91,28 +129,34 @@ export default function Docs() {
                     margintop='71px'
                     title='What is “PROJECT NAME”'
                 />
-                <DocIntroTitle
-                    margintop='60px'
-                    title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
-                />
+                <i>
+                    <DocIntroTitle
+                        margintop='60px'
+                        title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
+                    />
+                </i>
                 <DocIntroCard
                     margintop='57px'
                     height='702px'
                     selectIcon={false}
                 />
-                <DocIntroTitle
-                    margintop='71px'
-                    title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
-                />
+                <i>
+                    <DocIntroTitle
+                        margintop='71px'
+                        title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
+                    />
+                </i>
                 <hr className='w-full border-[#838383] mt-[71px]' />
                 <DocIntroHeader
                     margintop='71px'
                     title='Tokenomics'
                 />
-                <DocIntroTitle
-                    margintop='71px'
-                    title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
-                />
+                <i>
+                    <DocIntroTitle
+                        margintop='71px'
+                        title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
+                    />
+                </i>
                 <div className='mt-[71px] w-full flex flex-col gap-y-[71px]'>
                     {Array.from({ length: 3 }).map((_, index) => (
                         <DocIntroCard key={index} height='702px' selectIcon={false} margintop='0px' />
@@ -123,10 +167,12 @@ export default function Docs() {
                     margintop='71px'
                     title='Roadmap'
                 />
-                <DocIntroTitle
-                    margintop='71px'
-                    title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
-                />
+                <i>
+                    <DocIntroTitle
+                        margintop='71px'
+                        title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
+                    />
+                </i>
                 <DocIntroCard
                     margintop='71px'
                     height='702px'
@@ -137,6 +183,11 @@ export default function Docs() {
                     margintop='71px'
                     title='Community Links'
                 />
+                <div className='mt-[62px] w-full flex flex-wrap justify-center mb-[140px] gap-[24px] '>
+                    {SocialButtonData.map((item, index) => (
+                        <DocSocialButton key={index} buttonlog={item.buttonlog} buttonName={item.buttonName} />
+                    ))}
+                </div>
             </div>
         </div>
     )
