@@ -50,7 +50,10 @@ export default {
         sans: ['var(--font-inter)'],
         jost: ['var(--font-jost)'],
       },
-
+      backgroundPosition: {
+        'docview': 'center -120px',
+        'centertop': 'center top',
+      },
       backgroundImage: {
         'home': "url('/assets/back/main.gif')",
         'launchpad': "url('/assets/back/LaunchBack.png')",
@@ -112,18 +115,20 @@ export default {
         'logowidth': 'clamp(100px, calc(100px + (180 - 100) * ((100vw - 360px) / (520 - 360))), 180px)',
         'walletbuttonwidth': 'clamp(120px, calc(120px + (230 - 120) * ((100vw - 360px) / (520 - 360))), 230px)',
         'footerlogo': 'clamp(200px, calc(200px + (260 - 200) * ((100vw - 360px) / (680 - 360))), 260px)',
-
+        'docsocialbuttonwidth': 'clamp(333px, calc(333px + (400 - 333) * ((100vw - 390px) / (520 - 390))), 400px)',
 
       },
       height: {
         'livecardcontent': 'clamp(16px, calc(16px + (20 - 16) * ((100vw - 360px) / (480 - 360))), 20px)',
         'moonheight': 'clamp(204px, calc(204px + (532 - 204) * ((100vw - 390px) / (1280 - 390))), 532px)',
         'launchpadbuttonheight': 'clamp(25px, calc(25px + (50 - 25) * ((100vw - 360px) / (870 - 360))), 50px)',
-        // 'launchpadheight': 'clamp(330px, calc(330px + (357 - 330) * ((100vw - 360px) / (480 - 360))), 322px)',
         'launchpadtable': 'clamp(30px, calc(30px + (50 - 30) * ((100vw - 360px) / (680 - 360))), 50px)',
         'claimcardheight': 'clamp(30px, calc(30px + (50 - 30) * ((100vw - 360px) / (870 - 360))), 50px)',
         'walletbuttonheight': 'clamp(25px, calc(25px + (40 - 25) * ((100vw - 360px) / (520 - 360))), 40px)',
         'sidebariconheight': 'clamp(20px, calc(20px + (35 - 20) * ((100vw - 360px) / (520 - 360))), 35px)',
+        'docsocialbuttonheight': 'clamp(100px, calc(100px + (120 - 100) * ((100vw - 390px) / (520 - 390))), 120px)',
+        'doccardheight': 'clamp(187px, calc(187px + (702 - 187) * ((100vw - 390px) / (1280 - 390))), 702px)',
+        'doccardiconheight': 'clamp(18px, calc(18px + (70 - 18) * ((100vw - 390px) / (1280 - 390))), 70px)',
 
       },
       margin: {
@@ -132,6 +137,7 @@ export default {
         'launchpadmain2': 'clamp(32px, calc(32px + (140 - 32) * ((100vw - 360px) / (480 - 360))), 140px)',
         'claimcardtablemargin': 'clamp(16px, calc(16px + (45 - 16) * ((100vw - 360px) / (870 - 360))), 45px)',
         'claimheadermargin': 'clamp(25px, calc(25px + (70 - 25) * ((100vw - 360px) / (480 - 360))), 70px)',
+        'doc': 'clamp(25px, calc(25px + (70 - 25) * ((100vw - 360px) / (480 - 360))), 70px)',
       },
       padding: {
         'moonpadding': 'clamp(35px, calc(35px + (93 - 35) * ((100vw - 360px) / (1280 - 360))), 93px)',
