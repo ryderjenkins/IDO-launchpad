@@ -1,7 +1,6 @@
 'use client'
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Button1 from "./button1";
 import CardIcon from "../../../public/assets/category/icon.png";
 import Earth from "../../../public/assets/icon/earth.png";
 import Telegram from "../../../public/assets/icon/telegram.png";
@@ -10,6 +9,15 @@ import Discord from "../../../public/assets/icon/discord.png";
 import Watch from "../../../public/assets/icon/watch.png";
 import Doc from "../../../public/assets/icon/doc.png";
 
+
+import { Jost } from 'next/font/google'
+
+const jost = Jost({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-jost',
+
+})
 
 export default function LiveCard(
     { timeview, projectname, description, target, token, startday, endday, livestate }:
@@ -41,10 +49,13 @@ export default function LiveCard(
                 </div>
                 <div className="w-[350px] mx-[25px] mt-[125px] flex flex-col items-center">
                     <div className="w-[60px] h-[60px] bg-[#27B17D] rounded-[10px]">
+
                         <Image
                             alt="live"
                             src={CardIcon}
                         />
+
+
                     </div>
                     <h1 className="text-[20px] text-white text-center my-[15px] font-400">{projectname}</h1>
                     <p className="w-full text-[16px] h-[50px] overflow-hidden font-200 text-white text-center block">{description}</p>
@@ -62,17 +73,20 @@ export default function LiveCard(
                             <h1 className="xs:text-[16px]  font-500 text-white">{endday}</h1>
                         </div>
                     </div>
-                    <Button1
-                        name="View Project"
-                        width="100%"
-                        height="32px"
-                    />
+                    {/* view project button */}
+                    <button
+                        className="border-[1px] border-[#646769] w-full h-[32px] rounded-[10px] backdrop-blur-md bg-gradient-to-l from-[#e3e3e30c] "
+                        onClick={() => router.push('/doc')}
+                    >
+                        <span className={`text-buttonfluid md:text-[16px] font-normal  ${jost.className}`}>View Project</span>
+                    </button>
+
                     <div className="w-full flex mt-[25px] gap-4 justify-center">
                         <a><Image className="w-[20px] h-[20px]" alt="earth" src={Earth} /></a>
                         <a><Image className="w-[20px] h-[20px]" alt="x" src={X} /></a>
                         <a><Image className="w-[23.5px] h-[20px]" alt="telegram" src={Telegram} /></a>
                         <a><Image className="w-[26px] h-[20px]" alt="discord" src={Discord} /></a>
-                        <a><Image className="w-[16px] h-[20px]" onClick={() => router.push('/doc')} alt="doc" src={Doc} /></a>
+                        <a><Image className="w-[16px] h-[20px]" alt="doc" src={Doc} /></a>
 
                     </div>
                 </div>

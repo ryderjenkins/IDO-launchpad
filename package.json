@@ -22,6 +22,8 @@
     "headlessui": "^0.0.0",
     "mui": "^0.0.1",
     "next": "15.1.5",
+    "next-video": "^2.0.4",
+    "next-videos": "1.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

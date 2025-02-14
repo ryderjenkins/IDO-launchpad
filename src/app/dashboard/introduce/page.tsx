@@ -3,8 +3,7 @@ import Button1 from '../../components/button1';
 import Image from 'next/image';
 import aptos from "../../../../public/assets/category/aptos.png";
 import katman from "../../../../public/assets/category/katma.png";
-import astromove from "../../../../public/assets/back/mainlogo.gif";
-// import logMedia from '@/app/dashboard/introduce/mainlogo.webm';
+
 import { Jost } from 'next/font/google';
 
 const jost = Jost({
@@ -33,13 +32,10 @@ export default function intruduce() {
         <div className="w-full m-auto xl:mt-[70px] mt-[30px] xl:flex justify-between">
             <div className='w-full flex justify-center xl:hidden '>
 
-                <div className="xl:w-[532px] w-moonwidth h-moonheight xl:h-[532px] flex items-center justify-center">
-                    <Image
-                        alt='astromove'
-                        src={astromove}
-                    />
+                <video autoPlay muted className='xl:w-[532px] w-moonwidth h-moonheight xl:h-[532px] flex items-center justify-center'>
+                    <source src="/assets/back/mainlogo.webm" type="video/webm" />
+                </video>
 
-                </div>
             </div>
 
             <div className="xl:w-[670px] mr-[10px] flex flex-col items-center xl:block mt-[50px] xl:mt-0px">
@@ -62,12 +58,12 @@ export default function intruduce() {
                     <a href="https://sui.io" target='blank'><Image alt={"katman"} src={katman} /></a>
                 </div>
             </div>
-            <div className='hidden xl:flex items-center justify-center w-[558px] h-[558px]'>
-                <Image
-                    alt='astromove'
-                    src={astromove}
-                />
-            </div>
+
+
+            <video autoPlay muted className='hidden xl:flex items-center justify-center w-[558px] h-[558px]'>
+                <source src="/assets/back/mainlogo.webm" type="video/webm" />
+            </video>
+
         </div>
     )
 }
