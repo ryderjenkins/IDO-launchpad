@@ -57,125 +57,103 @@ export default function Docs() {
                 <h1 className="xs:text-[24px] text-[14px] xs:mt-[25px] mt-[56px] text-center font-200 text-white sm:w-[544px] xs:w-full w-[375px] px-[25px] sm:px-0">
                     Lorem ipsum dolor sit amet consectetur. Neque at sed eu leo tortor. Vitae sed morbi amet mattis. Neque sit viverra morbi metus.
                 </h1>
-                <h1 className="text-[16px] xs:text-[24px] xs:mt-[40px] mt-[60px] text-center font-400 text-white">
+                <h1 className="text-[16px] xs:text-[24px] xs:mt-[40px] mt-[60px] xs:mb-[90px] mb-[56px] text-center font-400 text-white">
                     Launch Has Ended
                 </h1>
 
                 <DocIntroHeader
-                    margintop='106px'
                     title='Introduction'
                 />
-                <DocIntroCard selectIcon={true} margintop='75px' />
+                <DocIntroCard selectIcon={true} />
                 <DocIntroTitle
-                    margintop='106px'
                     title='Lorem ipsum dolor sit amet consectetur. Nibh in enim fames non orci. Faucibus platea dolor elit ridiculus scelerisque eget ac. Penatibus ipsum iaculis diam mollis proin pretium quam.'
                 />
                 <DocIntroTitle
-                    margintop='50px'
                     title='At sit mi ultrices aenean leo lectus blandit. Faucibus aliquam convallis id dolor a mauris mauris. Amet purus id pretium phasellus neque netus fames viverra. Faucibus eget elit cursus ac ipsum id. Viverra nisl pellentesque tortor sapien vitae. In sit vestibulum nunc natoque turpis id fringilla.'
                 />
 
-                <div className='mt-[90px] w-full flex flex-col gap-y-[42px]'>
+                <div className='xs:mt-[90px] mt-[30px] w-full flex flex-col items-center'>
                     {Array.from({ length: 2 }).map((_, index) => (
-                        <DocIntroCard key={index} selectIcon={false} margintop='0px' />
+                        <DocIntroCard key={index} selectIcon={false} />
                     ))}
                 </div>
                 <DocIntroTitle
-                    margintop='106px'
                     title='Lorem ipsum dolor sit amet consectetur. Ipsum vestibulum nibh in duis pellentesque nisl hendrerit massa. A tortor tellus cras iaculis vel pharetra nunc enim maecenas. Nam diam pulvinar suspendisse duis. Sollicitudin nunc quam facilisi ut viverra tincidunt eleifend lectus. Blandit ipsum et tincidunt in purus vel mattis mi. Fermentum in ac sit risus viverra ut facilisi ut aliquet. Odio risus faucibus non vehicula mauris suscipit. Imperdiet enim tellus rhoncus gravida turpis. Venenatis ut enim sed enim turpis velit convallis etiam phasellus. Nisi laoreet elementum mattis massa dictum viverra metus risus. Ipsum risus vulputate nisl ut nisl vulputate eget quisque. Dui lorem tincidunt dictumst gravida praesent phasellus lorem morbi. Aliquam elementum orci volutpat habitasse est ipsum. Purus amet suspendisse amet consequat.'
                 />
-                <DocIntroCard selectIcon={false} margintop='42px' />
-                <hr className='w-full border-[#838383] mt-[120px]' />
+                <DocIntroCard selectIcon={false} />
+                <hr className='xs:w-full w-[92vw] border-[#838383] mt-[71px]' />
                 <DocIntroHeader
-                    margintop='72px'
                     title='Token Launch Structure'
                 />
                 <DocIntroTitle
-                    margintop='42px'
                     title='Please note, that you can only submit one purchase request, please make sure you submit your final intended amount on your initial request.'
                 />
                 <DocIntroCard
-                    margintop='42px'
                     selectIcon={false}
                 />
                 <DocIntroHeader
-                    margintop='73px'
                     title='Token Launch Allocation'
                 />
                 <DocIntroCard
-                    margintop='73px'
                     selectIcon={false}
                 />
                 <i>
                     <DocIntroTitle
-                        margintop='72px'
                         title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
                     />
                 </i>
-                <hr className='w-full border-[#838383] mt-[71px]' />
+                <hr className='xs:w-full w-[92vw] border-[#838383] mt-[71px]' />
                 <DocIntroHeader
-                    margintop='71px'
                     title='Launch Timeline'
                 />
                 <DocIntroCard
-                    margintop='71px'
                     selectIcon={false}
                 />
-                <hr className='w-full border-[#838383] mt-[71px]' />
+                <hr className='xs:w-full w-[92vw] border-[#838383] mt-[71px]' />
                 <DocIntroHeader
-                    margintop='71px'
                     title='What is “PROJECT NAME”'
                 />
                 <i>
                     <DocIntroTitle
-                        margintop='60px'
                         title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
                     />
                 </i>
                 <DocIntroCard
-                    margintop='57px'
                     selectIcon={false}
                 />
                 <i>
                     <DocIntroTitle
-                        margintop='71px'
                         title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
                     />
                 </i>
                 <hr className='w-full border-[#838383] mt-[71px]' />
                 <DocIntroHeader
-                    margintop='71px'
                     title='Tokenomics'
                 />
                 <i>
                     <DocIntroTitle
-                        margintop='71px'
                         title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
                     />
                 </i>
-                <div className='mt-[71px] w-full flex flex-col gap-y-[71px]'>
+                <div className='xs:mt-[71px] mt-[30px] w-full flex flex-col items-center'>
                     {Array.from({ length: 3 }).map((_, index) => (
-                        <DocIntroCard key={index} selectIcon={false} margintop='0px' />
+                        <DocIntroCard key={index} selectIcon={false} />
                     ))}
                 </div>
-                <hr className='w-full border-[#838383] mt-[71px]' />
+                <hr className='xs:w-full w-[92vw] border-[#838383] mt-[71px]' />
                 <DocIntroHeader
-                    margintop='71px'
                     title='Roadmap'
                 />
                 <i>
                     <DocIntroTitle
-                        margintop='71px'
                         title='Lorem ipsum dolor sit amet consectetur. Quis nisl amet commodo velit orci ut vitae purus est. Elementum lacinia vitae morbi nulla lectus adipiscing. Ac non risus felis non aenean vestibulum. Tortor sagittis nisi cursus scelerisque. Nibh pulvinar lacus nunc mollis augue aliquet amet a quis. Tristique elit pellentesque sit ultrices amet egestas. Gravida semper aliquam turpis et sed pharetra eu ac. Dictum sodales rhoncus sed porta ullamcorper eleifend. Semper nunc gravida varius at. Cursus maecenas mi id morbi lobortis dolor nullam. Semper quisque neque egestas sit leo nisi consectetur. Ultricies in in vitae turpis nisl tincidunt viverra. Erat nunc ut purus ultricies elit quis. Vitae nec amet sed at ut sit eleifend sit.'
                     />
                 </i>
                 <DocIntroCard
-                    margintop='71px'
                     selectIcon={false}
                 />
-                <hr className='w-full border-[#838383] mt-[71px]' />
+                <hr className='xs:w-full w-[92vw] border-[#838383] mt-[71px]' />
                 <DocIntroHeader
-                    margintop='71px'
                     title='Community Links'
                 />
                 <div className='mt-[62px] w-full flex flex-wrap justify-center mb-[140px] gap-[24px] '>

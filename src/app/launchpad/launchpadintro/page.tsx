@@ -5,8 +5,8 @@ import Launchlogo from "../../../../public/assets/back/spaceship.png";
 export default function LaunchpadIntro() {
     return (
         <div className="flex w-full sm:justify-center">
-            <div className="flex justify-center lg:justify-normal items-center lg:px-[24px] sm:w-full w-launchpadintrolwidth h-[322px] border-[1px] border-[#646464] rounded-[10px] sm:mt-[120px] mt-launchpadmain backdrop-blur-lg bg-gradient-to-r bg-opacity-10 from-[#e3e3e309] to-[#e3e3e307]">
-                <div className="flex flex-col lg:items-start items-center">
+            <div className="flex justify-center relative lg:justify-normal mx-auto lg:items-center lg:px-[24px] sm:w-full w-launchpadintrolwidth lg:h-[329px] border-[1px] border-[#646464] rounded-[10px] sm:mt-[120px] mt-launchpadmain backdrop-blur-lg bg-gradient-to-r bg-opacity-10 from-[#e3e3e309] to-[#e3e3e307]">
+                <div className="flex flex-col lg:items-start items-center lg:mt-0 mt-[20px]">
                     <h1 className="lg:text-[32px] lg:leading-[32px] text-launchpadfluid">
                         FUEL YOUR DREAMS, LAUNCH
                     </h1>
@@ -20,9 +20,10 @@ export default function LaunchpadIntro() {
                     >
                         <span className={`lg:text-[24px] text-launchpadbutton font-medium`}>Apply for IDOs</span>
                     </button>
+                    <Image alt="ship" src={Launchlogo} className="md:w-[240px] md:h-[192px] w-launchlogowidth lg:hidden mt-[20px]" />
                 </div>
-                <div className="absolute right-[128px] bottom-0">
-                    <Image alt="ship" src={Launchlogo} className="w-[465px] h-[372px]" />
+                <div className="absolute left-0 bottom-0 w-full lg3:pr-[137px] lg2:pr-[50px] pr-[20px] flex justify-end">
+                    <Image alt="ship" src={Launchlogo} className="w-[465px] h-[372px] lg:block hidden" />
                 </div>
             </div>
         </div>

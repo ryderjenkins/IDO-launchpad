@@ -75,9 +75,9 @@ export default {
         'howworkdescription': 'clamp(8px, calc(8px + (18 - 8) * ((100vw - 360px) / (860 - 360))), 18px)',
 
         // launchpad font
-        'launchpadfluid': 'clamp(18px, calc(18px + (32 - 18) * ((100vw - 360px) / (870 - 360))), 32px)',
-        'launchpadfluid2': 'clamp(26px, calc(26px + (48 - 26) * ((100vw - 360px) / (870 - 360))), 48px)',
-        'launchpadfluid3': 'clamp(14px, calc(14px + (16 - 14) * ((100vw - 360px) / (870 - 360))), 16px)',
+        'launchpadfluid': 'clamp(16px, calc(16px + (32 - 16) * ((100vw - 360px) / (870 - 390))), 32px)',
+        'launchpadfluid2': 'clamp(24px, calc(24px + (48 - 24) * ((100vw - 390px) / (870 - 390))), 48px)',
+        'launchpadfluid3': 'clamp(8px, calc(8px + (16 - 8) * ((100vw - 390px) / (870 - 390))), 16px)',
         'launchpadbutton': 'clamp(14px, calc(14px + (24 - 14) * ((100vw - 360px) / (870 - 360))), 24px)',
         'launchpadbtntext': 'clamp(14px, calc(14px + (16 - 14) * ((100vw - 360px) / (870 - 360))), 16px)',
         'launchpadsearch': 'clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / (680 - 360))), 24px)',
@@ -97,6 +97,7 @@ export default {
         'md': '720px',
         'lg': '870px',
         'lg2': '967px',
+        'lg3': '1100px',
         'xl': '1280px',
         '2xl': '1250px',
         '3xl': '1415px',
@@ -116,6 +117,7 @@ export default {
         'walletbuttonwidth': 'clamp(120px, calc(120px + (230 - 120) * ((100vw - 360px) / (520 - 360))), 230px)',
         'footerlogo': 'clamp(200px, calc(200px + (260 - 200) * ((100vw - 360px) / (680 - 360))), 260px)',
         'docsocialbuttonwidth': 'clamp(333px, calc(333px + (400 - 333) * ((100vw - 390px) / (520 - 390))), 400px)',
+        'launchlogowidth': 'clamp(151px, calc(151px + (240 - 151) * ((100vw - 390px) / (720 - 390))), 240px)',
 
       },
       height: {
@@ -141,7 +143,9 @@ export default {
       },
       padding: {
         'moonpadding': 'clamp(35px, calc(35px + (93 - 35) * ((100vw - 360px) / (1280 - 360))), 93px)',
+        'launchlogoposition': 'clamp(30px, calc(30px + (137 - 30) * ((100vw - 360px) / (1280 - 360))), 137px)',
       },
+
     },
   },
   plugins: [heroui()],
