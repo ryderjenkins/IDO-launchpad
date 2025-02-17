@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import ToTopButton from "./components/ToTopButton";
 import SideBar from "./components/SideBar";
 import { useEffect, useState } from "react";
+import MouseTrack from "./components/MouseTrack";
 
 
 export default function RootLayout({
@@ -76,6 +77,7 @@ export default function RootLayout({
           viewstate={sidebar}
           sidebarclose={() => setSidebar(false)}
         />
+        <MouseTrack />
       </body>
     </html>
   );
