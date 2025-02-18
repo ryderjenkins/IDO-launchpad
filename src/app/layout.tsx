@@ -77,6 +77,7 @@ export default function RootLayout({
           viewstate={sidebar}
           sidebarclose={() => setSidebar(false)}
         />
+        
         <MouseTrack />
       </body>
     </html>
