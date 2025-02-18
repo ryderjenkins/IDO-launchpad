@@ -85,10 +85,7 @@ export default function intruduce() {
                 muted
                 className="hidden xl:flex items-center justify-center w-[558px] h-[558px]"
             >
-                <source
-                    src="/assets/back/banner.webm"
-                    type="video/webm"
-                />
+                <source src="/assets/back/apple_2.mov" type="video/mp4" />
             </video>
         </div>
     );
