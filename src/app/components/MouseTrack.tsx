@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 // import TrackCursor from "../../../public/assets/icon/sidebarclaim.png";
 import TrackCursor from "../../../public/assets/icon/mousetracker.mp4"
 
