@@ -4,8 +4,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 // import Image from "next/image";
 // import TrackCursor from "../../../public/assets/icon/sidebarclaim.png";
-// import TrackCursor from "../../../public/assets/icon/mousetracker.mp4"
-
+// import TrackCursor from "@/assets/icon/Fmedia.png"
 interface MousePosition {
     x: number;
     y: number;
@@ -16,7 +15,7 @@ const MouseTrack: React.FC = () => {
         null
     );
     const [isVisible, setIsVisible] = useState(false);
-    const imageRef = useRef<HTMLImageElement>(null);
+    const imageRef = useRef<HTMLVideoElement>(null);
     const [rotation, setRotation] = useState<number>(0);
 
     const x = useMotionValue(mousePosition?.x ?? 0);
@@ -52,7 +51,7 @@ const MouseTrack: React.FC = () => {
         y.set(mousePosition.y);
 
         if (imageRef.current) {
-            const imageElement: HTMLImageElement = imageRef.current;
+            const imageElement: HTMLVideoElement = imageRef.current;
             const rect = imageElement.getBoundingClientRect();
             const centerX = rect.left + rect.width / 2;
             const centerY = rect.top + rect.height / 2;
