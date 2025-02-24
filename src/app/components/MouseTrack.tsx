@@ -16,7 +16,7 @@ const MouseTrack: React.FC = () => {
         null
     );
     const [isVisible, setIsVisible] = useState(false);
-    const imageRef = useRef<HTMLImageElement>(null);
+    const imageRef = useRef<HTMLVideoElement>(null);
     const [rotation, setRotation] = useState<number>(0);
 
     const x = useMotionValue(mousePosition?.x ?? 0);
@@ -52,7 +52,7 @@ const MouseTrack: React.FC = () => {
         y.set(mousePosition.y);
 
         if (imageRef.current) {
-            const imageElement: HTMLImageElement = imageRef.current;
+            const imageElement: HTMLVideoElement = imageRef.current;
             const rect = imageElement.getBoundingClientRect();
             const centerX = rect.left + rect.width / 2;
             const centerY = rect.top + rect.height / 2;
